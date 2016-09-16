@@ -5,5 +5,12 @@ package Model;
  */
 public class textAdventure
 {
+    private String Text[];
+
+    public textAdventure() {
+        Text[] = new Text[10];
+        Text[1] = "Deine erste Aufgabe!";
+    }
+
 
 }
