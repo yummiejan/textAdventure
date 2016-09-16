@@ -33,7 +33,7 @@
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Find ich auch. Lass doch zu Anna gehen.&#10;"/>
+          <text value=" "/>
         </properties>
       </component>
       <component id="334b4" class="javax.swing.JButton" binding="dialogue2Button">
@@ -41,7 +41,7 @@
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Dein Ernst?! Bist du bescheuert?!"/>
+          <text value=" "/>
         </properties>
       </component>
       <component id="98fc" class="javax.swing.JButton" binding="dialogue3Button">
@@ -49,7 +49,7 @@
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Naja, können wir das auch anders lösen?"/>
+          <text value=" "/>
         </properties>
       </component>
       <component id="34c60" class="javax.swing.JButton" binding="dialogue4Button">
@@ -58,7 +58,7 @@
         </constraints>
         <properties>
           <opaque value="true"/>
-          <text value="Nein"/>
+          <text value=" "/>
         </properties>
       </component>
     </children>
