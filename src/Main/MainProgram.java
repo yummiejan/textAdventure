@@ -1,3 +1,5 @@
+package Main;
+
 import Control.MainController;
 import View1.GUI;
 import View2.Console;
@@ -12,5 +14,13 @@ public class MainProgram
     {
         MainController control = new MainController();
         GUI jan = new GUI(control);
+    }
+
+    public void openGUI(int ui){
+        if(ui == 0){
+
+        }else{
+
+        }
     }
 }
