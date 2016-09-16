@@ -7,10 +7,10 @@ public class textAdventure
 {
     private String Text[];
 
-    public textAdventure() {
-        Text[] = new Text[10];
-        Text[1] = "Deine erste Aufgabe!";
-    }
+    //public textAdventure() {
+     //   this.Text[] = new Text[10];
+       // this.Text[1] = "Deine erste Aufgabe!";
+    //}
 
 
 }
