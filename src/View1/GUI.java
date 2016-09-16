@@ -21,7 +21,7 @@ public class GUI extends JFrame {
 
     private MainController controller;
 
-    private int lol;
+    private int lol = 1;
 
 
     public GUI(MainController controller) {
