@@ -5,5 +5,5 @@ package View2;
  */
 public class Console
 {
-
+//ich hasse github über alles
 }
