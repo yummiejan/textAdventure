@@ -12,13 +12,13 @@ public class MainController
 
     public MainController()
     {
-        if(aGUI.getAuswahl() == 1);
+        if(aGUI.getAuswahl() == 1)
         {
             System.out.println("test");
         }
-        else if(aGUI.getAuswahl() == 2)
+        else
         {
-            GUI fensterSpiel = new GUI();
+            System.out.println("killa");
         }
     }
 }

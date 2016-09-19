@@ -74,9 +74,7 @@ public class GUI extends JFrame
     private void textAusgeben(String text)
     {
         char[] c = text.toCharArray();
-        for (int i = 0; i < c.length; i++)
-        {
-            Timer t = new Timer(1000, new ActionListener()
+            timer t = new Timer(1000, new ActionListener()
             {
                 public void actionPerformed(ActionEvent e)
                 {
@@ -84,8 +82,6 @@ public class GUI extends JFrame
                 }
             });
             t.start();
-        }
-
     }
 
     {
