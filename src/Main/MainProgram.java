@@ -15,7 +15,7 @@ public class MainProgram
     {
         MainController control = new MainController();
         AuswahlGUI auswahl = new AuswahlGUI();
-        //ggsgs
+        //ggsgsgg
 
     }
 
