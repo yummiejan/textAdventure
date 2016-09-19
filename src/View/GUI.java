@@ -117,13 +117,4 @@ public class GUI extends JFrame
         return panel;
     }
 
-    /*public void enableDialogue()
-    {
-        if (!dialogue1Button.isEnabled() && !dialogue2Button.isEnabled())
-        {
-            dialogue1Button.setEnabled(true);
-            dialogue2Button.setEnabled(true);
-        }
-    }*/
-
 }
