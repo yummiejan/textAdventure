@@ -74,14 +74,14 @@ public class GUI extends JFrame
     private void textAusgeben(String text)
     {
         char[] c = text.toCharArray();
-            timer t = new Timer(1000, new ActionListener()
+            /*timer t = new Timer(1000, new ActionListener()
             {
                 public void actionPerformed(ActionEvent e)
                 {
                     System.out.print(c[i]);
                 }
             });
-            t.start();
+            t.start();*/
     }
 
     {

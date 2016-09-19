@@ -12,13 +12,13 @@ public class MainController
 
     public MainController()
     {
-        if(aGUI.getAuswahl() == 1)
+        /*if(aGUI.getAuswahl() == 1)
         {
             System.out.println("test");
         }
         else
         {
             System.out.println("killa");
-        }
+        }*/
     }
 }
