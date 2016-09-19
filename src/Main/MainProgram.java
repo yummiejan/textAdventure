@@ -1,7 +1,7 @@
 package Main;
 
 import Control.MainController;
-import View1.GUI;
+import View.GUI;
 
 
 /**

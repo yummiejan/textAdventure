@@ -1,4 +1,4 @@
-package View1;
+package View;
 
 import Control.MainController;
 
