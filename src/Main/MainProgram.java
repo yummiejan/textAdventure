@@ -1,6 +1,8 @@
 package Main;
 
 import Control.MainController;
+import View.AuswahlGUI;
+import View.Console;
 import View.GUI;
 
 
@@ -12,14 +14,12 @@ public class MainProgram
     public static void main(String[] args)
     {
         MainController control = new MainController();
-        GUI jan = new GUI(control);
+        AuswahlGUI auswahl = new AuswahlGUI();
+
+
     }
 
-    public void openGUI(int ui){
-        if(ui == 0){
 
-        }else{
 
-        }
-    }
+
 }
