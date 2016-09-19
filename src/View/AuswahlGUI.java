@@ -8,35 +8,44 @@ import java.awt.event.ActionListener;
 /**
  * Created by 204g01 on 19.09.2016.
  */
-public class AuswahlGUI extends JFrame {
+public class AuswahlGUI extends JFrame
+{
     private JLabel topLabel;
     private JButton konsolenButton;
     private JButton guiButton;
     private JPanel panel;
     private int auswahl;
 
-    public AuswahlGUI() {
+    public AuswahlGUI()
+    {
 
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
         setVisible(true);
+        this.setSize(600, 400);
+        this.setResizable(false);
 
-        konsolenButton.addActionListener(new ActionListener() {
+        konsolenButton.addActionListener(new ActionListener()
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 auswahl = 1;
             }
         });
-        guiButton.addActionListener(new ActionListener() {
+        guiButton.addActionListener(new ActionListener()
+        {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 auswahl = 2;
             }
         });
     }
 
-    public int getAuswahl() {
+    public int getAuswahl()
+    {
         return auswahl;
     }
 
@@ -54,7 +63,8 @@ public class AuswahlGUI extends JFrame {
      *
      * @noinspection ALL
      */
-    private void $$$setupUI$$$() {
+    private void $$$setupUI$$$()
+    {
         panel = new JPanel();
         panel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(2, 2, new Insets(0, 0, 0, 0), -1, -1));
         topLabel = new JLabel();
@@ -73,7 +83,8 @@ public class AuswahlGUI extends JFrame {
     /**
      * @noinspection ALL
      */
-    public JComponent $$$getRootComponent$$$() {
+    public JComponent $$$getRootComponent$$$()
+    {
         return panel;
     }
 }
