@@ -20,7 +20,6 @@ public class GUI extends JFrame
     private JButton dialogue4Button;
     private JButton dialogue1Button;
     private JButton dialogue2Button;
-    private JTextArea textArea1;
     public String text;
     private Timer timer;
 
@@ -50,7 +49,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                editorPane1.setText(dialogue2Button.getText());
+                textAusgeben("Test");
             }
         });
 
@@ -58,7 +57,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                editorPane1.setText(dialogue3Button.getText());
+                textAusgeben("Test");
             }
         });
 
@@ -66,7 +65,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                editorPane1.setText(dialogue4Button.getText());
+                textAusgeben("Test");
             }
         });
     }
@@ -74,14 +73,17 @@ public class GUI extends JFrame
     private void textAusgeben(String text)
     {
         char[] c = text.toCharArray();
-            /*timer t = new Timer(1000, new ActionListener()
+        ActionListener taskPerformer = new ActionListener()
+        {
+            public void actionPerformed(ActionEvent evt)
             {
-                public void actionPerformed(ActionEvent e)
-                {
-                    System.out.print(c[i]);
-                }
-            });
-            t.start();*/
+                String newText = editorPane1.getText();
+                editorPane1.setText(newText);
+                //System.out.println(i);
+
+            }
+        };
+        new Timer(200, taskPerformer).start();
     }
 
     {
@@ -101,7 +103,7 @@ public class GUI extends JFrame
     private void $$$setupUI$$$()
     {
         panel = new JPanel();
-        panel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(6, 1, new Insets(10, 10, 10, 10), -1, -1));
+        panel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(5, 1, new Insets(10, 10, 10, 10), -1, -1));
         panel.setFont(new Font("Comic Sans MS", Font.BOLD, panel.getFont().getSize()));
         panel.setMaximumSize(new Dimension(600, 400));
         panel.setMinimumSize(new Dimension(600, 400));
@@ -114,19 +116,17 @@ public class GUI extends JFrame
         panel.add(editorPane1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         dialogue1Button = new JButton();
         dialogue1Button.setText(" ");
-        panel.add(dialogue1Button, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel.add(dialogue1Button, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         dialogue2Button = new JButton();
         dialogue2Button.setText(" ");
-        panel.add(dialogue2Button, new com.intellij.uiDesigner.core.GridConstraints(3, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel.add(dialogue2Button, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         dialogue3Button = new JButton();
         dialogue3Button.setText(" ");
-        panel.add(dialogue3Button, new com.intellij.uiDesigner.core.GridConstraints(4, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel.add(dialogue3Button, new com.intellij.uiDesigner.core.GridConstraints(3, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         dialogue4Button = new JButton();
         dialogue4Button.setOpaque(true);
         dialogue4Button.setText(" ");
-        panel.add(dialogue4Button, new com.intellij.uiDesigner.core.GridConstraints(5, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        textArea1 = new JTextArea();
-        panel.add(textArea1, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
+        panel.add(dialogue4Button, new com.intellij.uiDesigner.core.GridConstraints(4, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**

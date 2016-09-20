@@ -13,6 +13,7 @@ public class MainProgram
     public static void main(String[] args)
     {
         MainController control = new MainController();
-        AuswahlGUI auswahl = new AuswahlGUI();
+        //AuswahlGUI auswahl = new AuswahlGUI();
+        GUI jangui = new GUI(control);
     }
 }

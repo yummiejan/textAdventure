@@ -8,7 +8,7 @@ import View.GUI;
  */
 public class MainController
 {
-    private AuswahlGUI aGUI;
+    //private AuswahlGUI aGUI;
 
     public MainController()
     {
