@@ -27,7 +27,7 @@ public class GUI extends JFrame
     private MainController controller;
 
 
-    public GUI(MainController controller)
+    public GUI()
     {
         this.controller = controller;
         setContentPane(panel);

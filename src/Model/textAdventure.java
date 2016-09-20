@@ -7,12 +7,20 @@ public class textAdventure
 {
     private String[] Text;
     private String[] Aktion;
+    private String[] anfangsdialog = new String[10];
 
     public textAdventure() {
+
+        anfangsdialog[0]="Hallo wir erklären dir nun kurz das prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meißt a/b/c/d Antworten auswählen oder andere Sachen eintippen jenachdem was dort steht!\nAber jetzt sag uns doch ertmal wie du heißt?";
+
+
+
+
+
         this.Text = new String[10];
         this.Aktion = new String[20];
         this.Text[0] = "Hallo, und wilkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkel!";
-        this.Text[1] = "OK, nun stehst du vor 3 Türen. Vorne - Rechts - Links, Wähle";
+        this.Text[1] = "OK, nun stehst du vor 3 Türen. Wähle";
         this.Text[2] = "Gute Wahl, denke Ich. 3 Wege kannst du erkennen."+"\n"+"Der Linke: Frei - Der Rechte: Ein verschlossenes Tor - Der Vordere: Zu dunkel um etwas zu sehen.";
         this.Text[3] = "Es war zu dunkel und du bist in ein Loch gefallen." +"\n"+"Du bist an einem langen elenden Tod verreckt!";
         this.Text[4] = "Die Tür ist zu. Willst du den Sichtbaren Weg gehen oder den Dunklen?";
@@ -31,6 +39,12 @@ public class textAdventure
         this.Aktion[7]= "Stille";
         this.Aktion[8]= "Winseln";
         this.Aktion[9]= "Attackieren";
+
+    }
+
+    public String getAnfangsdialog(int i)
+    {
+        return anfangsdialog[i];
     }
 
     public String getText(int i) {
