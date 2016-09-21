@@ -41,7 +41,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test");
+                textAusgeben("Test1");
             }
         });
 
@@ -49,7 +49,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test");
+                textAusgeben("Test2");
             }
         });
 
@@ -57,7 +57,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test");
+                textAusgeben("Test3");
             }
         });
 
@@ -65,7 +65,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test");
+                textAusgeben("Test4");
             }
         });
     }
@@ -77,9 +77,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent evt)
             {
-                String newText = editorPane1.getText();
-                editorPane1.setText(newText);
-                //System.out.println(i);
+                //TODO Text nacheinander in EditorPane ausgeben
 
             }
         };
