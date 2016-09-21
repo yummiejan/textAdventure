@@ -20,25 +20,26 @@ public class textAdventure
         this.Text = new String[10];
         this.Aktion = new String[20];
         this.Text[0] = "Hallo, und wilkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkel!";
-        this.Text[1] = "OK, nun stehst du vor 3 Türen. Wähle";
-        this.Text[2] = "Gute Wahl, denke Ich. 3 Wege kannst du erkennen."+"\n"+"Der Linke: Frei - Der Rechte: Ein verschlossenes Tor - Der Vordere: Zu dunkel um etwas zu sehen.";
-        this.Text[3] = "Es war zu dunkel und du bist in ein Loch gefallen." +"\n"+"Du bist an einem langen elenden Tod verreckt!";
-        this.Text[4] = "Die Tür ist zu. Willst du den Sichtbaren Weg gehen oder den Dunklen?";
-        this.Text[5] = "Du folgst dem dir sichtbaren Weg, und findest eine Truhe... "+"\n"+"Die Truhe ist OFFEN";
-        this.Text[6] = "Du hast einen Schlüssel gefunden."+"\n"+"Vieleicht passt er ja zu der Tür";
-        this.Text[7] = "Du versuchst die Tür zu Öffnen. Der Schlüssel passt nicht!"+"\n"+"Du gehst wieder zur Truhe wo du den Schlüssel gefunden hast!"+"\n"+"2 Wege füren dich weiter, von rechts hörst du ein winseln. Von links Totenstille.";
-        this.Text[8] = "Du bist in eine Sackgasse gelaufen und drehst wieder um."+"\n"+"Du gehst nun den Weg wo ein winseln herkommt."+"\n"+"Ein Troll steht vor dir. Angeckettet. Hinter ihm eine Truhe. Er schnaubt.";
-        this.Text[9] = "Der Troll versperrt dir den Weg. Du kommst nicht an die Kiste herran."+"\n"+"Du musst ihn besiegen. Der Schlüssel verleit dir 2 attackPoints.";
-        this.Aktion[0]= "Rechts";
-        this.Aktion[1]= "Links";
-        this.Aktion[2]= "Vorne";
-        this.Aktion[3]= "Dunkel";
-        this.Aktion[4]= "Sichtbar";
-        this.Aktion[5]= "Tür";
-        this.Aktion[6]= "Hineinschauen";
-        this.Aktion[7]= "Stille";
-        this.Aktion[8]= "Winseln";
-        this.Aktion[9]= "Attackieren";
+
+        /*erste Entscheidung*/this.Text[1] = "OK, nun stehst du vor 3 Türen. Wähle";
+        /*zweite Entscheidung*/this.Text[2] = "Gute Wahl, denke Ich. 3 Wege kannst du erkennen."+"\n"+"Der Linke: Frei - Der Rechte: Ein verschlossenes Tor - Der Vordere: Zu dunkel um etwas zu sehen.";
+        /*Vorne*/this.Text[3] = "Es war zu dunkel und du bist in ein Loch gefallen." +"\n"+"Du bist an einem langen elenden Tod verreckt!";
+        /*Rechts*/this.Text[4] = "Die Tür ist zu. Willst du den Sichtbaren Weg gehen oder den Dunklen?";
+        /*Links*/this.Text[5] = "Du folgst dem dir sichtbaren Weg, und findest eine Truhe... "+"\n"+"Die Truhe ist OFFEN";
+        /*Schlüssel*/this.Text[6] = "Du hast einen Schlüssel gefunden."+"\n"+"Vieleicht passt er ja zu der Tür";
+        /*dritte Entscheidung*/this.Text[7] = "Du versuchst die Tür zu Öffnen. Der Schlüssel passt nicht!"+"\n"+"Du gehst wieder zur Truhe wo du den Schlüssel gefunden hast!"+"\n"+"2 Wege füren dich weiter, von rechts hörst du ein winseln. Von links Totenstille.";
+        /*totenstille*/this.Text[8] = "Du bist in eine Sackgasse gelaufen und drehst wieder um."+"\n"+"Du gehst nun den Weg wo ein winseln herkommt.Ein Troll steht vor dir. Angeckettet. Hinter ihm eine Truhe. Er schnaubt.";
+        /*winseln*/this.Text[9] = "Ein Troll steht vor dir. Angeckettet. Hinter ihm eine Truhe. Er schnaubt.\nDer Troll versperrt dir den Weg. Du kommst nicht an die Kiste herran."+"\n"+"Du musst ihn besiegen. Der Schlüssel verleit dir 2 attackPoints.";
+        /*ersteEntschedung*/this.Aktion[0]= "Rechts";
+        /*ersteEntschedung*/this.Aktion[1]= "Links";
+        /*ersteEntschedung*/this.Aktion[2]= "Vorne";
+        /*zweiteEntschedung*/this.Aktion[3]= "Dunkel";
+        /*zweiteEntschedung*/this.Aktion[4]= "Sichtbar";
+        /*zweiteEntschedung*/this.Aktion[5]= "Tür";
+        /*Schlüssel*/this.Aktion[6]= "Hineinschauen";
+        /*dritteEntschedung*/this.Aktion[7]= "Stille";
+        /*dritteEntschedung*/this.Aktion[8]= "Winseln";
+        /*Troll*/this.Aktion[9]= "Attackieren";
 
     }
 
