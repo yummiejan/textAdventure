@@ -1,7 +1,5 @@
 package View;
 
-import Control.MainController;
-
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
@@ -24,12 +22,8 @@ public class GUI extends JFrame
     private Timer timer;
 
 
-    private MainController controller;
-
-
     public GUI()
     {
-        this.controller = controller;
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -69,6 +63,9 @@ public class GUI extends JFrame
             }
         });
     }
+
+
+    //Gibt den gegebenen Text nacheinander(wie in Pokemon aus)
 
     private void textAusgeben(String text)
     {
