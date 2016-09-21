@@ -75,8 +75,8 @@ public class GUI extends JFrame
             public void actionPerformed(ActionEvent evt)
             {
                 //TODO Text nacheinander in EditorPane ausgeben
-                String tmpText = editorPane1.getText() + c[i];
-                editorPane1.setText(tmpText);
+                //String tmpText = editorPane1.getText() + c[i];
+                //editorPane1.setText(tmpText);
             }
         };
         new Timer(200, taskPerformer).start();
