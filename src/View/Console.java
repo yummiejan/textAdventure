@@ -7,14 +7,16 @@ import java.util.Scanner;
  */
 public class Console
 {
+    //Neuen Scanner erstellen
     Scanner scanner = new Scanner(System.in);
 
-
+    //Text hinzufügen
     public void textHinzufügenMitAuswahl(String text)
     {
         System.out.println(text);
     }
 
+    //Text hinzufügen mit 2 Antwortmöglichkeitzen
     public void textHinzufügenMitAuswahl(String text,String antwort1,String antwort2)
     {
         System.out.println(text);
@@ -38,10 +40,7 @@ public class Console
     }
 
 
-    public void textHinzufügen(String text)
-    {
-        System.out.println(text);
-    }
+
 
     public String getInput()
     {
