@@ -16,10 +16,11 @@ public class MainController
     Console fyngui = new Console();
     Model.textAdventure text = new Model.textAdventure();
     Player player = new Player("name",100,1,1);
-
     public MainController()
     {
-        if(JOptionPane.showInputDialog(null,"Startfenster","Konsole/Fenster").equals("Fenster"))
+        AuswahlGUI aus = new AuswahlGUI();
+        while(aus.getAuswahl() == 0);
+        if(aus.getAuswahl()==2)
         {
             GUI jangui = new GUI();
         }else{
@@ -32,7 +33,7 @@ public class MainController
     {
         fyngui.textHinzufügenMitAuswahl(text.getAnfangsdialog(0));
         player.setName(fyngui.getInput());
-        fyngui.textHinzufügen("Hallo "+player.getName());
+        fyngui.textHinzufügenMitAuswahl("Hallo "+player.getName());
     }
 
 }

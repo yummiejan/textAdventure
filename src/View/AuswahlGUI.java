@@ -32,7 +32,9 @@ public class AuswahlGUI extends JFrame
             public void actionPerformed(ActionEvent e)
             {
                 auswahl = 1;
+                dispose();
             }
+
         });
         guiButton.addActionListener(new ActionListener()
         {
@@ -40,6 +42,7 @@ public class AuswahlGUI extends JFrame
             public void actionPerformed(ActionEvent e)
             {
                 auswahl = 2;
+                dispose();
             }
         });
     }
