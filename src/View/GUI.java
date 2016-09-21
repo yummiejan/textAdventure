@@ -1,7 +1,5 @@
 package View;
 
-import Control.MainController;
-
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
@@ -24,12 +22,8 @@ public class GUI extends JFrame
     private Timer timer;
 
 
-    private MainController controller;
-
-
     public GUI()
     {
-        this.controller = controller;
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -41,7 +35,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test");
+                textAusgeben("Test1");
             }
         });
 
@@ -49,7 +43,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test");
+                textAusgeben("Test2");
             }
         });
 
@@ -57,7 +51,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test");
+                textAusgeben("Test3");
             }
         });
 
@@ -65,10 +59,13 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test");
+                textAusgeben("Test4");
             }
         });
     }
+
+
+    //Gibt den gegebenen Text nacheinander(wie in Pokemon aus)
 
     private void textAusgeben(String text)
     {
@@ -77,10 +74,9 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent evt)
             {
-                String newText = editorPane1.getText();
-                editorPane1.setText(newText);
-                //System.out.println(i);
-
+                //TODO Text nacheinander in EditorPane ausgeben
+                //String tmpText = editorPane1.getText() + c[i];
+                //editorPane1.setText(tmpText);
             }
         };
         new Timer(200, taskPerformer).start();
