@@ -14,6 +14,7 @@ import javax.swing.*;
 public class MainController
 {
     Console fyngui = new Console();
+    GUI jangui = new GUI();
     Model.textAdventure text = new Model.textAdventure();
     Player player = new Player("name",100,1,1);
 
@@ -24,10 +25,12 @@ public class MainController
         while(aus.getAuswahl() == 0);
         if(aus.getAuswahl()==2)
         {
-            GUI jangui = new GUI();
+            jangui.setVisible(true);
+
         }else{
-            Console fyngui = new Console();
+
             anfangsDialogKonsole();
+            test();
         }
     }
 
@@ -36,6 +39,13 @@ public class MainController
         fyngui.textHinzufügenMitAuswahl(text.getAnfangsdialog(0));
         player.setName(fyngui.getInput());
         fyngui.textHinzufügenMitAuswahl("Hallo "+player.getName());
+    }
+    public void test()
+    {
+        fyngui.textHinzufügenMitAuswahl(text.getText(0));
+        fyngui.textHinzufügenMitAuswahl(text.getText(1),"Holz Tür","Stahl Tür","Stein Tür");
+        fyngui.getInput();
+        fyngui.textHinzufügenMitAuswahl(text.getText(2));
     }
 
 }

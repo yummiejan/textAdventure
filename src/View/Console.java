@@ -23,25 +23,22 @@ public class Console
         System.out.println(" a) " + antwort1 + "\n b) " + antwort2);
     }
 
+    //Text hinzufügen mit 3 Antwortmöglichkeitzen
     public void textHinzufügenMitAuswahl(String text,String antwort1,String antwort2,String antwort3)
     {
         System.out.println(text);
-        System.out.println(" a) " + antwort1 + "\n b) " + antwort2);
         System.out.println(" a) " + antwort1 + "\n b) " + antwort2 + "\n c) " + antwort3);
 
     }
 
+    //Text hinzufügen mit 2 Antwortmöglichkeitzen
     public void textHinzufügenMitAuswahl(String text,String antwort1,String antwort2,String antwort3,String antwort4)
     {
         System.out.println(text);
-        System.out.println(" a) " + antwort1 + "\n b) " + antwort2);
-        System.out.println(" a) " + antwort1 + "\n b) " + antwort2 + "\n c) " + antwort3);
         System.out.println(" a) " + antwort1 + "\n b) " + antwort2 + "\n c) " + antwort3 + "\n d) " + antwort4);
     }
 
-
-
-
+    //Eingabe aus der Konsole als String zurückgeben
     public String getInput()
     {
         return scanner.nextLine();

@@ -25,7 +25,7 @@ public class GUI extends JFrame {
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
-        setVisible(true);
+        setVisible(false);
         this.setResizable(false);
         this.setTitle("Text Adventure");
 
