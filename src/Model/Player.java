@@ -10,6 +10,6 @@ public class Player extends Creature {
         super();
 
     }
-
+    public boolean getTod(){return tod}
 
 }
