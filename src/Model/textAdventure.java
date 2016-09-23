@@ -31,7 +31,7 @@ public class textAdventure
         /*attack*/this.Text[10] = "Du kämpfst, aber weißt nicht wofür. Es ist nur eine Kiste.";
         /*Angriff*/this.Text[11] = "Du machst 5 Schaden am Troll\n es scheint als würde er nur noch ein paar Schläge aushalten!\n Er hat noch 15 HP!";
         /*3xAngriff*/this.Text[12] = "Wow was für eine Kombo! Der zerschetzelst ihn wie mit einem Messer durch Butter!";
-        /*Truhe*/this.Text[13] = "Du schiebst den Troll zur Seite ";
+        /*Truhe*/this.Text[13] = "Du schiebst den Troll zur Seite und ";
 
 
         /*Auswahl erste Entscheidung*/this.Aktion[0]= "Rechts";
