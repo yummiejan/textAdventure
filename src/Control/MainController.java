@@ -38,12 +38,22 @@ public class MainController
         player.setName(fyngui.getInput());
         fyngui.textHinzufügenMitAuswahl("Hallo "+player.getName());
     }
-    public void test()
-    {
+    public void test() {
         fyngui.textHinzufügenMitAuswahl(text.getText(0));
-        fyngui.textHinzufügenMitAuswahl(text.getText(1),"Holz Tür","Stahl Tür","Stein Tür");
+        fyngui.textHinzufügenMitAuswahl(text.getText(1), "Holz Tür", "Stahl Tür", "Stein Tür");
         fyngui.getInput();
         fyngui.textHinzufügenMitAuswahl(text.getText(2));
+        if (fyngui.getInput().equals("a")) {
+            fyngui.textHinzufügenMitAuswahl(text.getText(5));
+        } else if (fyngui.getInput().equals("b")) {
+            fyngui.textHinzufügenMitAuswahl(text.getText(4), "den sichtbaren", "den dunklen");
+            if (fyngui.getInput().equals("a")) {
+                fyngui.textHinzufügenMitAuswahl(text.getText(5));
+            }
+        } else if (fyngui.getInput().equals("c")) {
+            fyngui.textHinzufügenMitAuswahl(text.getText(3));
+        }
+
     }
 
 }
