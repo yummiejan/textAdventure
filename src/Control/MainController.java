@@ -16,6 +16,8 @@ public class MainController
     Console fyngui = new Console();
     Model.textAdventure text = new Model.textAdventure();
     Player player = new Player("name",100,1,1);
+
+
     public MainController()
     {
         AuswahlGUI aus = new AuswahlGUI();

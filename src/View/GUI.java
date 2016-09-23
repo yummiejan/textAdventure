@@ -9,8 +9,7 @@ import java.awt.event.ActionListener;
 /**
  * Created by janpa on 12.09.2016.
  */
-public class GUI extends JFrame
-{
+public class GUI extends JFrame {
     private JPanel panel;
     private JEditorPane editorPane1;
     private JButton dialogue1;
@@ -22,8 +21,7 @@ public class GUI extends JFrame
     private Timer timer;
 
 
-    public GUI()
-    {
+    public GUI() {
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -33,32 +31,28 @@ public class GUI extends JFrame
 
         dialogue1Button.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
                 textAusgeben("Test1");
             }
         });
 
         dialogue2Button.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
                 textAusgeben("Test2");
             }
         });
 
         dialogue3Button.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
                 textAusgeben("Test3");
             }
         });
 
         dialogue4Button.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e)
-            {
+            public void actionPerformed(ActionEvent e) {
                 textAusgeben("Test4");
             }
         });
@@ -69,17 +63,19 @@ public class GUI extends JFrame
 
     private void textAusgeben(String text)
     {
-        char[] c = text.toCharArray();
+        char c = text.toCharArray()[0];
         ActionListener taskPerformer = new ActionListener()
         {
             public void actionPerformed(ActionEvent evt)
             {
                 //TODO Text nacheinander in EditorPane ausgeben
-                //String tmpText = editorPane1.getText() + c[i];
-                //editorPane1.setText(tmpText);
+                String tmpText = editorPane1.getText() + c;
+
+                editorPane1.setText(tmpText);
             }
         };
         new Timer(200, taskPerformer).start();
+
     }
 
     {
@@ -96,8 +92,7 @@ public class GUI extends JFrame
      *
      * @noinspection ALL
      */
-    private void $$$setupUI$$$()
-    {
+    private void $$$setupUI$$$() {
         panel = new JPanel();
         panel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(5, 1, new Insets(10, 10, 10, 10), -1, -1));
         panel.setFont(new Font("Comic Sans MS", Font.BOLD, panel.getFont().getSize()));
@@ -128,8 +123,7 @@ public class GUI extends JFrame
     /**
      * @noinspection ALL
      */
-    public JComponent $$$getRootComponent$$$()
-    {
+    public JComponent $$$getRootComponent$$$() {
         return panel;
     }
 
