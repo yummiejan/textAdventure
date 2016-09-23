@@ -17,6 +17,8 @@ public class MainController
     GUI jangui = new GUI();
     Model.textAdventure text = new Model.textAdventure();
     Player player = new Player("name",100,1,1);
+
+
     public MainController()
     {
         AuswahlGUI aus = new AuswahlGUI();
