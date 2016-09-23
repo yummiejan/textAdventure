@@ -24,9 +24,11 @@ public class MainController
         if(aus.getAuswahl()==2)
         {
             jangui.setVisible(true);
+
         }else{
 
             anfangsDialogKonsole();
+            test();
         }
     }
 
@@ -35,6 +37,13 @@ public class MainController
         fyngui.textHinzufügenMitAuswahl(text.getAnfangsdialog(0));
         player.setName(fyngui.getInput());
         fyngui.textHinzufügenMitAuswahl("Hallo "+player.getName());
+    }
+    public void test()
+    {
+        fyngui.textHinzufügenMitAuswahl(text.getText(0));
+        fyngui.textHinzufügenMitAuswahl(text.getText(1),"Holz Tür","Stahl Tür","Stein Tür");
+        fyngui.getInput();
+        fyngui.textHinzufügenMitAuswahl(text.getText(2));
     }
 
 }
