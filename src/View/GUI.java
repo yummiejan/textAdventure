@@ -31,28 +31,32 @@ public class GUI extends JFrame {
 
         dialogue1Button.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 textAusgeben("Test1");
             }
         });
 
         dialogue2Button.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 textAusgeben("Test2");
             }
         });
 
         dialogue3Button.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 textAusgeben("Test3");
             }
         });
 
         dialogue4Button.addActionListener(new ActionListener()
         {
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 textAusgeben("Test4");
             }
         });
