@@ -27,7 +27,6 @@ public class Console
     public void textHinzufügenMitAuswahl(String text,String antwort1,String antwort2,String antwort3)
     {
         System.out.println(text);
-        System.out.println(" a) " + antwort1 + "\n b) " + antwort2);
         System.out.println(" a) " + antwort1 + "\n b) " + antwort2 + "\n c) " + antwort3);
 
     }
@@ -36,8 +35,6 @@ public class Console
     public void textHinzufügenMitAuswahl(String text,String antwort1,String antwort2,String antwort3,String antwort4)
     {
         System.out.println(text);
-        System.out.println(" a) " + antwort1 + "\n b) " + antwort2);
-        System.out.println(" a) " + antwort1 + "\n b) " + antwort2 + "\n c) " + antwort3);
         System.out.println(" a) " + antwort1 + "\n b) " + antwort2 + "\n c) " + antwort3 + "\n d) " + antwort4);
     }
 
