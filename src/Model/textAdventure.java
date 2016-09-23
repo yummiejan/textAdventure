@@ -1,5 +1,5 @@
 package Model;
-
+import Model.Monster;
 /**
  * Created by janpa on 12.09.2016.
  */
@@ -17,7 +17,7 @@ public class textAdventure
 
 
 
-        this.Text = new String[10];
+        this.Text = new String[15];
         this.Aktion = new String[20];
         this.Text[0] = "Hallo, und wilkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkel!";
 
@@ -30,12 +30,16 @@ public class textAdventure
         /*dritte Entscheidung*/this.Text[7] = "Du versuchst die Tür zu Öffnen. Der Schlüssel passt nicht!"+"\n"+"Du gehst wieder zur Truhe wo du den Schlüssel gefunden hast!"+"\n"+"2 Wege füren dich weiter, von rechts hörst du ein winseln. Von links Totenstille.";
         /*totenstille*/this.Text[8] = "Du bist in eine Sackgasse gelaufen und drehst wieder um."+"\n"+"Du gehst nun den Weg wo ein winseln herkommt.Ein Troll steht vor dir. Angeckettet. Hinter ihm eine Truhe. Er schnaubt.";
         /*winseln*/this.Text[9] = "Ein Troll steht vor dir. Angeckettet. Hinter ihm eine Truhe. Er schnaubt.\nDer Troll versperrt dir den Weg. Du kommst nicht an die Kiste herran."+"\n"+"Du musst ihn besiegen. Der Schlüssel verleit dir 2 attackPoints.";
-        /*ersteEntschedung*/this.Aktion[0]= "Rechts";
-        /*ersteEntschedung*/this.Aktion[1]= "Links";
-        /*ersteEntschedung*/this.Aktion[2]= "Vorne";
-        /*zweiteEntschedung*/this.Aktion[3]= "Dunkel";
-        /*zweiteEntschedung*/this.Aktion[4]= "Sichtbar";
-        /*zweiteEntschedung*/this.Aktion[5]= "Tür";
+        /*attack*/this.Text[10] = "Du kämpfst, aber weißt nicht wofür. Es ist nur eine Kiste.";
+
+
+
+        /*Auswahl erste Entscheidung*/this.Aktion[0]= "Rechts";
+        /*Auswahl erste Entscheidung*/this.Aktion[1]= "Links";
+        /*Auswahl erste Entscheidung*/this.Aktion[2]= "Vorne";
+        /*Auswahl zweite Entscheidung*/this.Aktion[3]= "Dunkel";
+        /*Auswahl zweite Entscheidung*/this.Aktion[4]= "Sichtbar";
+        /*Auswahl zweite Entscheidungg*/this.Aktion[5]= "Tür";
         /*Schlüssel*/this.Aktion[6]= "Hineinschauen";
         /*dritteEntschedung*/this.Aktion[7]= "Stille";
         /*dritteEntschedung*/this.Aktion[8]= "Winseln";
