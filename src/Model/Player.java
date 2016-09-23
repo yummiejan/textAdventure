@@ -10,7 +10,7 @@ public class Player extends Creature {
         super();
 
     }
-    public boolean getTod(){return tod}
+    public boolean getTod(){return tod;}
 
     public void setTod(boolean tod) {
         this.tod = tod;

@@ -15,7 +15,7 @@ public class textAdventure
 
         anfangsdialog[0]="Hallo wir erklären dir nun kurz das prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meißt a/b/c/d Antworten auswählen oder andere Sachen eintippen jenachdem was dort steht!\nAber jetzt sag uns doch ertmal wie du heißt?";
 
-        this.Text = new String[15];
+        this.Text = new String[20];
         this.Aktion = new String[20];
         this.Text[0] = "Hallo, und wilkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkel!";
 
@@ -31,7 +31,9 @@ public class textAdventure
         /*attack*/this.Text[10] = "Du kämpfst, aber weißt nicht wofür. Es ist nur eine Kiste.";
         /*Angriff*/this.Text[11] = "Du machst 5 Schaden am Troll\n es scheint als würde er nur noch ein paar Schläge aushalten!\n Er hat noch 15 HP!";
         /*3xAngriff*/this.Text[12] = "Wow was für eine Kombo! Der zerschetzelst ihn wie mit einem Messer durch Butter!";
-        /*Truhe*/this.Text[13] = "Du schiebst den Troll zur Seite und ";
+        /*Truhe*/this.Text[13] = "Du schiebst den Troll zur Seite und gehst zur Truhe!\n Dein Schlüssel vibriert. Er passt!";
+        /*Treasure*/this.Text[14] = "Du erhältst einen Schlüssel und einen Totenkopf";
+        /*DIE TÜR*/this.Text[15] = "Der Schlüssel passt nicht jedoch der Totenkopf! Wie komisch!\n";
 
 
         /*Auswahl erste Entscheidung*/this.Aktion[0]= "Rechts";
