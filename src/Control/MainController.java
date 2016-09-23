@@ -14,6 +14,7 @@ import javax.swing.*;
 public class MainController
 {
     Console fyngui = new Console();
+    GUI jangui = new GUI();
     Model.textAdventure text = new Model.textAdventure();
     Player player = new Player("name",100,1,1);
     public MainController()
@@ -22,9 +23,9 @@ public class MainController
         while(aus.getAuswahl() == 0);
         if(aus.getAuswahl()==2)
         {
-            GUI jangui = new GUI();
+            jangui.setVisible(true);
         }else{
-            Console fyngui = new Console();
+
             anfangsDialogKonsole();
         }
     }
