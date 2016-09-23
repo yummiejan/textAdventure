@@ -14,7 +14,7 @@ public class textAdventure
         anfangsdialog[0]="Hallo wir erklären dir nun kurz das prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meißt a/b/c/d Antworten auswählen oder andere Sachen eintippen jenachdem was dort steht!\nAber jetzt sag uns doch ertmal wie du heißt?";
 
 
-
+//ahfiuagfoa
 
 
         this.Text = new String[15];
