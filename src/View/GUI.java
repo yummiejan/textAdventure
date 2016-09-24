@@ -1,5 +1,7 @@
 package View;
 
+import Control.MainController;
+
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
@@ -36,7 +38,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test1");
+
             }
         });
 
@@ -44,7 +46,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test2");
+
             }
         });
 
@@ -52,7 +54,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test3");
+
             }
         });
 
@@ -60,7 +62,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                textAusgeben("Test4");
+
             }
         });
     }
@@ -70,7 +72,7 @@ public class GUI extends JFrame
 
     public void textAusgeben(String text)
     {
-        String tmpText = textPane1.getText();
+        String tmpText = textPane1.getText() + text;
         textPane1.setText(tmpText);
 
 
@@ -79,7 +81,7 @@ public class GUI extends JFrame
         {
             public void actionPerformed(ActionEvent evt)
             {
-                //TODO Text nacheinander in EditorPane ausgeben
+                // Text nacheinander in EditorPane ausgeben
                 String tmpText = editorPane1.getText() + c;
 
                 editorPane1.setText(tmpText);

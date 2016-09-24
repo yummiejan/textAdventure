@@ -5,9 +5,7 @@ import Model.Player;
 import View.AuswahlGUI;
 import View.Console;
 import View.GUI;
-import View.GuiController;
-
-import javax.swing.*;
+import View.ViewController;
 
 /**
  * Created by janpa on 11.09.2016.
@@ -15,7 +13,7 @@ import javax.swing.*;
 public class MainController
 {
     Console fyngui = new Console();
-    GuiController guicontrol = new GuiController();
+    ViewController guicontrol = new ViewController();
     GUI jangui = new GUI();
     Model.textAdventure text = new Model.textAdventure();
     Player player = new Player("name",100,1,1);
@@ -33,7 +31,6 @@ public class MainController
             anfangsDialogKonsole();
             test();
         }
-
     }
 
     public void anfangsDialogKonsole()
@@ -58,6 +55,10 @@ public class MainController
             fyngui.textHinzufügenMitAuswahl(text.getText(3));
         }
 
+    }
+    public void guiTest()
+    {
+        guicontrol.textAusgebenG(text.getAnfangsdialog(0));
     }
 
 }
