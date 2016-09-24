@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import View.*;
+
 /**
  * Created by 204g01 on 19.09.2016.
  */
@@ -18,7 +20,6 @@ public class AuswahlGUI extends JFrame
 
     public AuswahlGUI()
     {
-
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -33,6 +34,7 @@ public class AuswahlGUI extends JFrame
             {
                 auswahl = 1;
                 dispose();
+
             }
 
         });

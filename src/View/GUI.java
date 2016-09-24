@@ -30,9 +30,10 @@ public class GUI extends JFrame
         this.setContentPane(panel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
-        this.setVisible(false);
+        this.setVisible(true);
         this.setResizable(false);
         this.setTitle("Text Adventure");
+        textPane1.setEditable(false);
 
         dialogue1Button.addActionListener(new ActionListener()
         {
@@ -67,28 +68,10 @@ public class GUI extends JFrame
         });
     }
 
-
-    //Gibt den gegebenen Text nacheinander(wie in Pokemon aus)
-
-    public void textAusgeben(String text)
+    public void enterText(char s)
     {
-        String tmpText = textPane1.getText() + text;
-        textPane1.setText(tmpText);
-
-
-        /*char c = text.toCharArray()[0];
-        ActionListener taskPerformer = new ActionListener()
-        {
-            public void actionPerformed(ActionEvent evt)
-            {
-                // Text nacheinander in EditorPane ausgeben
-                String tmpText = editorPane1.getText() + c;
-
-                editorPane1.setText(tmpText);
-            }
-        };
-        new Timer(200, taskPerformer).start();*/
-
+        String test = textPane1.getText() + s;
+        textPane1.setText(test);
     }
 
     {
@@ -130,6 +113,7 @@ public class GUI extends JFrame
         dialogue4Button.setText(" ");
         panel.add(dialogue4Button, new com.intellij.uiDesigner.core.GridConstraints(4, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         textPane1 = new JTextPane();
+        textPane1.setEditable(true);
         panel.add(textPane1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
     }
 

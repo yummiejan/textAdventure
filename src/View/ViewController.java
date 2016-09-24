@@ -1,6 +1,6 @@
 package View;
 
-import View.GUI;
+import View.*;
 import Control.MainController;
 
 /**
@@ -8,7 +8,7 @@ import Control.MainController;
  */
 public class ViewController
 {
-    public String text;
+    public GUI gui = new GUI();
 
     public ViewController()
     {
@@ -17,13 +17,14 @@ public class ViewController
 
     public void textAusgebenG(String text)
     {
+        System.out.print("izda");
         for (int i = 0; i < text.length(); i++)
         {
             char result = text.charAt(i);
-            System.out.print(result);
+            gui.enterText(result);
             try
             {
-                Thread.sleep(1000);
+                Thread.sleep(40);
             }
             catch(InterruptedException e)
             {
