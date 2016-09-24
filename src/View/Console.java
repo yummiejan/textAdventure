@@ -31,7 +31,7 @@ public class Console
 
     }
 
-    //Text hinzufügen mit 2 Antwortmöglichkeitzen
+    //Text hinzufügen mit 4 Antwortmöglichkeitzen
     public void textHinzufügenMitAuswahl(String text,String antwort1,String antwort2,String antwort3,String antwort4)
     {
         System.out.println(text);

@@ -9,7 +9,8 @@ import java.awt.event.ActionListener;
 /**
  * Created by janpa on 12.09.2016.
  */
-public class GUI extends JFrame {
+public class GUI extends JFrame
+{
     private JPanel panel;
     private JEditorPane editorPane1;
     private JButton dialogue1;
@@ -17,11 +18,13 @@ public class GUI extends JFrame {
     private JButton dialogue4Button;
     private JButton dialogue1Button;
     private JButton dialogue2Button;
+    private JTextPane textPane1;
     public String text;
     private Timer timer;
 
 
-    public GUI() {
+    public GUI()
+    {
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -67,7 +70,11 @@ public class GUI extends JFrame {
 
     private void textAusgeben(String text)
     {
-        char c = text.toCharArray()[0];
+        String tmpText = textPane1.getText();
+        textPane1.setText(tmpText);
+
+
+        /*char c = text.toCharArray()[0];
         ActionListener taskPerformer = new ActionListener()
         {
             public void actionPerformed(ActionEvent evt)
@@ -78,7 +85,7 @@ public class GUI extends JFrame {
                 editorPane1.setText(tmpText);
             }
         };
-        new Timer(200, taskPerformer).start();
+        new Timer(200, taskPerformer).start();*/
 
     }
 
@@ -96,7 +103,8 @@ public class GUI extends JFrame {
      *
      * @noinspection ALL
      */
-    private void $$$setupUI$$$() {
+    private void $$$setupUI$$$()
+    {
         panel = new JPanel();
         panel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(5, 1, new Insets(10, 10, 10, 10), -1, -1));
         panel.setFont(new Font("Comic Sans MS", Font.BOLD, panel.getFont().getSize()));
@@ -106,9 +114,6 @@ public class GUI extends JFrame {
         panel.setPreferredSize(new Dimension(600, 400));
         panel.setVisible(true);
         panel.setBorder(BorderFactory.createTitledBorder(null, "", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, new Font(panel.getFont().getName(), panel.getFont().getStyle(), panel.getFont().getSize()), new Color(-4473925)));
-        editorPane1 = new JEditorPane();
-        editorPane1.setEditable(false);
-        panel.add(editorPane1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         dialogue1Button = new JButton();
         dialogue1Button.setText(" ");
         panel.add(dialogue1Button, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
@@ -122,12 +127,15 @@ public class GUI extends JFrame {
         dialogue4Button.setOpaque(true);
         dialogue4Button.setText(" ");
         panel.add(dialogue4Button, new com.intellij.uiDesigner.core.GridConstraints(4, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        textPane1 = new JTextPane();
+        panel.add(textPane1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
     }
 
     /**
      * @noinspection ALL
      */
-    public JComponent $$$getRootComponent$$$() {
+    public JComponent $$$getRootComponent$$$()
+    {
         return panel;
     }
 
