@@ -24,6 +24,7 @@
         </constraints>
         <properties>
           <text value="Konsole"/>
+          <toolTipText value="Spiele über die Konsole die sich im unteren Rand des Bildschirms befindet."/>
         </properties>
       </component>
       <component id="93eb5" class="javax.swing.JButton" binding="guiButton">
@@ -32,6 +33,7 @@
         </constraints>
         <properties>
           <text value="Fenster"/>
+          <toolTipText value="Spiele über ein eigenes Fenster auf deinem Bildschirm."/>
         </properties>
       </component>
     </children>

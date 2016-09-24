@@ -40,6 +40,7 @@ public class GUI extends JFrame
         this.setVisible(true);
         this.setResizable(false);
         this.setTitle("Text Adventure");
+        textPane1.setToolTipText("Dialogue");
         textPane1.setEditable(false);
 
         dialogue1Button.addActionListener(new ActionListener()
@@ -81,6 +82,7 @@ public class GUI extends JFrame
                 if (e.getKeyCode() == 10)
                 {
                     nameEntered = true;
+                    textPane1.setToolTipText("Dialogue");
                 }
             }
         });
@@ -95,6 +97,26 @@ public class GUI extends JFrame
 
         String test = textPane1.getText() + s;
         textPane1.setText(test);
+    }
+
+    public void buttonText(String s1, String s2, String s3, String s4)
+    {
+        dialogue1Button.setText(s1);
+        dialogue2Button.setText(s2);
+        if (s3 == null)
+        {
+            dialogue3Button.setEnabled(false);
+        } else
+        {
+            dialogue3Button.setText(s3);
+        }
+        if (s4 == null)
+        {
+            dialogue4Button.setEnabled(false);
+        } else
+        {
+            dialogue4Button.setText(s4);
+        }
     }
 
     public void setEditable(boolean b)

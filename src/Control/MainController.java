@@ -16,7 +16,6 @@ public class MainController
     Player player = new Player("name",100,1,1);
     AuswahlGUI aus = new AuswahlGUI();
     ViewController viewcontrol;
-    GUI gui;
 
     public MainController()
     {
@@ -67,8 +66,10 @@ public class MainController
         {
             System.out.print("");
         }
+        viewcontrol.setEditable(false);
         player.setName(viewcontrol.getName());
-        viewcontrol.textAusgebenG("Hallo " + player.getName() + "!", Color.RED);
+        viewcontrol.textAusgebenG("Hallo " + player.getName() + "! \n", Color.RED);
+        viewcontrol.textAusgebenG(text.getText(0), Color.RED);
     }
 
 }
