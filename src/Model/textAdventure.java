@@ -1,7 +1,5 @@
 package Model;
 
-import Control.MainController;
-
 /**
  * Created by janpa on 12.09.2016.
  */
@@ -13,7 +11,7 @@ public class textAdventure
 
     public textAdventure() {
 
-        anfangsdialog[0]="Hallo wir erklären dir nun kurz das prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meißt a/b/c/d Antworten auswählen oder andere Sachen eintippen jenachdem was dort steht!\nAber jetzt sag uns doch ertmal wie du heißt?";
+        anfangsdialog[0]="Hallo wir erklären dir nun kurz das prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meißt a/b/c/d Antworten auswählen oder dich im Fenster durch klicken!\nAber jetzt sag uns doch ertmal wie du heißt?";
 
         this.Text = new String[20];
         this.Aktion = new String[20];
@@ -34,6 +32,12 @@ public class textAdventure
         /*Truhe*/this.Text[13] = "Du schiebst den Troll zur Seite und gehst zur Truhe!\n Dein Schlüssel vibriert. Er passt!";
         /*Treasure*/this.Text[14] = "Du erhältst einen Schlüssel und einen Totenkopf";
         /*DIE TÜR*/this.Text[15] = "Der Schlüssel passt nicht jedoch der Totenkopf! Wie komisch!\n";
+        /*Etwas unerwartetes*/this.Text[16] = "Du gelangst auf eine Lichtung. Naja eine erleuchtete Fläche.\nIn der Mitte eine große Truhe sie scheint offen zu sein!";
+        /*Die große kleine truhe*/this.Text[17] = "Du erblickst eine kleine Truhe zu der dein Schlüssel passt! Du öffnest sie!";
+        /*weiter gehen*/this.Text[18] = "Du traust dem Braten nicht und suchst einen Weg, der dich weiter führt!\n Nach einer halben Stunde stellst du fest, dass du im Kreis gelaufen bist und dich nun der Truhe widmest!";
+        /*Inhalt*/this.Text[19] = "In der kleinen Truhe ist ein Stück Pergament. Auf dem steht geschrieben: Dähmlich oder weise das ist hier die Frage! \nDas Ziel ist erreicht, nur welches!?\nReal oder fiktiv?";
+        /*Real*/this.Text[20] = "Der Terror bleibt dir bestehen! Für immer in dieser Welt! R.I.P.";
+        /*Fiktiv*/this.Text[21] = "Nur ein Traum hat dich geleitet! Du erwachest!";
 
 
         /*Auswahl erste Entscheidung*/this.Aktion[0]= "Rechts";
@@ -46,6 +50,11 @@ public class textAdventure
         /*Auswahl dritteEntschedung*/this.Aktion[7]= "Stille";
         /*Auswahl dritteEntschedung*/this.Aktion[8]= "Winseln";
         /*Auswahl Troll*/this.Aktion[9]= "Attackieren";
+        /*Auswahl 3xAngriff*/this.Aktion[10] = "3xSchläge";
+        /*Auswahl Etwas unerwartetes*/this.Aktion[11] = "Öffnen";
+        /*Auswahl Etwas unerwartetes*/this.Aktion[12] = "weiter gehen";
+        /*Auswahl Inhalt*/this.Aktion[13] = "Real";
+        /*Auswahl*/this.Aktion[14] = "Fiktiv";
 
     }
 
