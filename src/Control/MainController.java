@@ -2,10 +2,8 @@ package Control;
 
 
 import Model.Player;
-import View.AuswahlGUI;
-import View.Console;
-import View.GUI;
-import View.ViewController;
+import View.*;
+
 
 /**
  * Created by janpa on 11.09.2016.
@@ -20,12 +18,14 @@ public class MainController
 
     public MainController()
     {
-        System.out.print("1");
-        while(aus.getAuswahl() == 0);
-        System.out.print("2");
+        while(aus.getAuswahl() == 0)
+        {
+            System.out.print("");
+        }
         if(aus.getAuswahl()==2)
         {
             viewcontrol = new ViewController();
+            guiTest();
         }
         else if(aus.getAuswahl() == 1)
         {

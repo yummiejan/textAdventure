@@ -17,7 +17,6 @@ public class ViewController
 
     public void textAusgebenG(String text)
     {
-        System.out.print("izda");
         for (int i = 0; i < text.length(); i++)
         {
             char result = text.charAt(i);
