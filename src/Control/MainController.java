@@ -5,6 +5,7 @@ import Model.Player;
 import View.AuswahlGUI;
 import View.Console;
 import View.GUI;
+import View.GuiController;
 
 import javax.swing.*;
 
@@ -14,10 +15,10 @@ import javax.swing.*;
 public class MainController
 {
     Console fyngui = new Console();
+    GuiController guicontrol = new GuiController();
     GUI jangui = new GUI();
     Model.textAdventure text = new Model.textAdventure();
     Player player = new Player("name",100,1,1);
-
 
     public MainController()
     {
@@ -32,6 +33,7 @@ public class MainController
             anfangsDialogKonsole();
             test();
         }
+
     }
 
     public void anfangsDialogKonsole()

@@ -15,6 +15,5 @@ public class MainProgram
     public static void main(String[] args)
     {
         MainController control = new MainController();
-
     }
 }
