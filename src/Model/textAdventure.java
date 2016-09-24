@@ -5,16 +5,15 @@ package Model;
  */
 public class textAdventure
 {
-    private String[] Text;
-    private String[] Aktion;
-    private String[] anfangsdialog = new String[10];
+    private String[] Text=new String[22];
+    private String[] Aktion=new String[15];
+    private String[] anfangsdialog = new String[1];
+    private String[] endbildschirm = new String[1];
 
     public textAdventure() {
 
         anfangsdialog[0]="Hallo wir erklären dir nun kurz das prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meißt a/b/c/d Antworten auswählen oder dich im Fenster durch klicken!\nAber jetzt sag uns doch ertmal wie du heißt?";
-
-        this.Text = new String[20];
-        this.Aktion = new String[20];
+        endbildschirm[0]="Vielen Dank. Du hast dieses Text-Adventure erfolgreich abgeschlossen! Hurray";
         this.Text[0] = "Hallo, und wilkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkel!";
 
         /*erste Entscheidung*/this.Text[1] = "OK, nun stehst du vor 3 Türen. Wähle";
