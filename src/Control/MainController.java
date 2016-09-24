@@ -70,6 +70,7 @@ public class MainController
         player.setName(viewcontrol.getName());
         viewcontrol.textAusgebenG("Hallo " + player.getName() + "! \n", Color.RED);
         viewcontrol.textAusgebenG(text.getText(0), Color.RED);
+        viewcontrol.buttonText("a","b",null,null);
     }
 
 }

@@ -12,7 +12,7 @@ public class textAdventure
 
     public textAdventure() {
 
-        anfangsdialog[0]="Hallo wir erklären dir nun kurz das Prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meist a/b/c/d Antworten auswählen oder dich im Fenster durchklicken!\nAber jetzt sag uns doch erstmal wie du heißt?";
+        anfangsdialog[0]="Hallo wir erklären dir nun kurz das Prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meist A/B/C/D als Antwort eingeben oder dich im Fenster durchklicken!\nAber jetzt sag uns doch erstmal wie du heißt?";
         endbildschirm[0]="Vielen Dank. Du hast dieses Text-Adventure erfolgreich abgeschlossen! Hurrah!";
         this.Text[0] = "Willkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkeln!";
 
