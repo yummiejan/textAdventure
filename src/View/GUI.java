@@ -107,12 +107,15 @@ public class GUI extends JFrame
     public void buttonText(String s1, String s2, String s3, String s4)
     {
         dialogue1Button.setText(s1);
+        dialogue1Button.setEnabled(true);
         dialogue2Button.setText(s2);
+        dialogue2Button.setEnabled(true);
         if (s3 == null)
         {
             dialogue3Button.setEnabled(false);
         } else
         {
+            dialogue3Button.setEnabled(true);
             dialogue3Button.setText(s3);
         }
         if (s4 == null)
@@ -120,6 +123,7 @@ public class GUI extends JFrame
             dialogue4Button.setEnabled(false);
         } else
         {
+            dialogue4Button.setEnabled(true);
             dialogue4Button.setText(s4);
         }
     }

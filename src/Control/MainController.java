@@ -72,6 +72,10 @@ public class MainController
         viewcontrol.textAusgebenG(text.getText(0), Color.RED);
         viewcontrol.textAusgebenG(text.getText(1), Color.RED);
         viewcontrol.buttonText(text.getAktion(0),text.getAktion(1),text.getAktion(2),null);
+        while(viewcontrol.getButtonPressed() == 0)
+        {
+            System.out.print("");
+        }
         switch(viewcontrol.getButtonPressed())
         {
             case 1:
@@ -83,8 +87,9 @@ public class MainController
             case 3:
                 viewcontrol.textAusgebenG(text.getText(2), Color.RED);
                 break;
-            viewcontrol.resetButton();
         }
+        viewcontrol.resetButton();
+
     }
 
 }
