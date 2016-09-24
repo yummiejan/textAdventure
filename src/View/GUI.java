@@ -2,11 +2,17 @@ package View;
 
 import Control.MainController;
 
+import javax.lang.model.element.Element;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
+import javax.swing.text.Style;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 /**
  * Created by janpa on 12.09.2016.
@@ -23,6 +29,7 @@ public class GUI extends JFrame
     private JTextPane textPane1;
     public String text;
     private Timer timer;
+    boolean nameEntered;
 
 
     public GUI()
@@ -66,12 +73,49 @@ public class GUI extends JFrame
 
             }
         });
+        textPane1.addKeyListener(new KeyAdapter()
+        {
+            @Override
+            public void keyPressed(KeyEvent e)
+            {
+                if (e.getKeyCode() == 10)
+                {
+                    nameEntered = true;
+                }
+            }
+        });
     }
 
-    public void enterText(char s)
+    public void enterText(char s, Color c)
     {
+        StyledDocument doc = textPane1.getStyledDocument();
+
+        Style style = textPane1.addStyle("Color", null);
+        StyleConstants.setForeground(style, c);
+
         String test = textPane1.getText() + s;
         textPane1.setText(test);
+    }
+
+    public void setEditable(boolean b)
+    {
+        textPane1.setEditable(b);
+        textPane1.setToolTipText("Enter your name");
+        textPane1.transferFocus();
+    }
+
+    public String getName()
+    {
+        if (nameEntered == true)
+        {
+            String[] lines = textPane1.getText().split("\\n");
+
+            return lines[3];
+
+        } else
+        {
+            return null;
+        }
     }
 
     {
@@ -114,6 +158,7 @@ public class GUI extends JFrame
         panel.add(dialogue4Button, new com.intellij.uiDesigner.core.GridConstraints(4, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         textPane1 = new JTextPane();
         textPane1.setEditable(true);
+        textPane1.setToolTipText("");
         panel.add(textPane1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
     }
 

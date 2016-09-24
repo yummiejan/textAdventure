@@ -4,6 +4,7 @@ package Control;
 import Model.Player;
 import View.*;
 
+import java.awt.*;
 
 /**
  * Created by janpa on 11.09.2016.
@@ -15,6 +16,7 @@ public class MainController
     Player player = new Player("name",100,1,1);
     AuswahlGUI aus = new AuswahlGUI();
     ViewController viewcontrol;
+    GUI gui;
 
     public MainController()
     {
@@ -59,7 +61,14 @@ public class MainController
     }
     public void guiTest()
     {
-        viewcontrol.textAusgebenG(text.getAnfangsdialog(0));
+        viewcontrol.textAusgebenG(text.getAnfangsdialog(0) + "\n", Color.RED);
+        viewcontrol.setEditable(true);
+        while(viewcontrol.getName() == null)
+        {
+            System.out.print("");
+        }
+        player.setName(viewcontrol.getName());
+        viewcontrol.textAusgebenG("Hallo " + player.getName() + "!", Color.RED);
     }
 
 }

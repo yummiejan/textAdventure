@@ -59,6 +59,7 @@
         </constraints>
         <properties>
           <editable value="true"/>
+          <toolTipText value=""/>
         </properties>
       </component>
     </children>
