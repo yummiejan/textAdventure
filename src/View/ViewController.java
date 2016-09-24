@@ -39,6 +39,16 @@ public class ViewController
         gui.buttonText(s1,s2,s3,s4);
     }
 
+    public int getButtonPressed()
+    {
+        return gui.getButtonPressed();
+    }
+
+    public void resetButton()
+    {
+        gui.resetButton();
+    }
+
     public void setEditable(boolean b)
     {
         gui.setEditable(b);

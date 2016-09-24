@@ -26,7 +26,7 @@ public class MainController
         if(aus.getAuswahl()==2)
         {
             viewcontrol = new ViewController();
-            guiTest();
+            guiStory();
         }
         else if(aus.getAuswahl() == 1)
         {
@@ -58,7 +58,7 @@ public class MainController
         }
 
     }
-    public void guiTest()
+    public void guiStory()
     {
         viewcontrol.textAusgebenG(text.getAnfangsdialog(0) + "\n", Color.RED);
         viewcontrol.setEditable(true);
@@ -72,7 +72,19 @@ public class MainController
         viewcontrol.textAusgebenG(text.getText(0), Color.RED);
         viewcontrol.textAusgebenG(text.getText(1), Color.RED);
         viewcontrol.buttonText(text.getAktion(0),text.getAktion(1),text.getAktion(2),null);
-
+        switch(viewcontrol.getButtonPressed())
+        {
+            case 1:
+                viewcontrol.textAusgebenG(text.getText(2), Color.RED);
+                break;
+            case 2:
+                viewcontrol.textAusgebenG(text.getText(2), Color.RED);
+                break;
+            case 3:
+                viewcontrol.textAusgebenG(text.getText(2), Color.RED);
+                break;
+            viewcontrol.resetButton();
+        }
     }
 
 }

@@ -30,7 +30,7 @@ public class GUI extends JFrame
     public String text;
     private Timer timer;
     boolean nameEntered;
-    public int buttonPressed;
+    private int buttonPressed;
 
 
     public GUI()
@@ -43,6 +43,10 @@ public class GUI extends JFrame
         this.setTitle("Text Adventure");
         textPane1.setToolTipText("Dialogue");
         textPane1.setEditable(false);
+        dialogue1Button.setEnabled(false);
+        dialogue2Button.setEnabled(false);
+        dialogue3Button.setEnabled(false);
+        dialogue4Button.setEnabled(false);
 
         dialogue1Button.addActionListener(new ActionListener()
         {
@@ -122,9 +126,9 @@ public class GUI extends JFrame
 
     public void setEditable(boolean b)
     {
+        textPane1.transferFocus();
         textPane1.setEditable(b);
         textPane1.setToolTipText("Enter your name");
-        textPane1.transferFocus();
         if (nameEntered == true)
         {
             textPane1.setToolTipText("Dialogue");
@@ -143,6 +147,16 @@ public class GUI extends JFrame
         {
             return null;
         }
+    }
+
+    public void resetButton()
+    {
+        buttonPressed = 0;
+    }
+
+    public int getButtonPressed()
+    {
+        return buttonPressed;
     }
 
     {
