@@ -17,19 +17,22 @@ public class MainController
     GUI jangui = new GUI();
     Model.textAdventure text = new Model.textAdventure();
     Player player = new Player("name",100,1,1);
+    AuswahlGUI aus = new AuswahlGUI();
 
     public MainController()
     {
-        AuswahlGUI aus = new AuswahlGUI();
-        while(aus.getAuswahl() == 0);
+        System.out.println(aus.getAuswahl());
         if(aus.getAuswahl()==2)
         {
             jangui.setVisible(true);
+            guiTest();
+            System.out.println(aus.getAuswahl());
 
-        }else{
+        }else if(aus.getAuswahl() == 1){
 
             anfangsDialogKonsole();
             test();
+            System.out.println(aus.getAuswahl());
         }
     }
 

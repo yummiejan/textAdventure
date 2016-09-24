@@ -27,10 +27,10 @@ public class GUI extends JFrame
 
     public GUI()
     {
-        setContentPane(panel);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        pack();
-        setVisible(false);
+        this.setContentPane(panel);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.pack();
+        this.setVisible(false);
         this.setResizable(false);
         this.setTitle("Text Adventure");
 
