@@ -22,7 +22,8 @@ public class ViewController
         for (int i = 0; i < text.length(); i++)
         {
             char result = text.charAt(i);
-            gui.enterText(result, c);
+            gui
+                    .enterText(result, c);
             try
             {
                 Thread.sleep(1);

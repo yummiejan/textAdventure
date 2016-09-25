@@ -1,15 +1,24 @@
 package View;
 
+import Control.MainController;
+
+import javax.lang.model.element.Element;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
+import javax.swing.text.Style;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 /**
  * Created by janpa on 12.09.2016.
  */
-public class GUI extends JFrame {
+public class GUI extends JFrame
+{
     private JPanel panel;
     private JEditorPane editorPane1;
     private JButton dialogue1;
@@ -20,62 +29,138 @@ public class GUI extends JFrame {
     private JTextPane textPane1;
     public String text;
     private Timer timer;
+    boolean nameEntered;
+    private int buttonPressed;
 
 
-    public GUI() {
-        setContentPane(panel);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        pack();
-        setVisible(false);
+    public GUI()
+    {
+        this.setContentPane(panel);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.pack();
+        this.setVisible(true);
         this.setResizable(false);
         this.setTitle("Text Adventure");
+        textPane1.setToolTipText("Dialogue");
+        textPane1.setEditable(false);
+        dialogue1Button.setEnabled(false);
+        dialogue2Button.setEnabled(false);
+        dialogue3Button.setEnabled(false);
+        dialogue4Button.setEnabled(false);
 
-        dialogue1Button.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                textAusgeben("Test1");
+        dialogue1Button.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                buttonPressed = 1;
             }
         });
 
-        dialogue2Button.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                textAusgeben("Test2");
+        dialogue2Button.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                buttonPressed = 2;
             }
         });
 
-        dialogue3Button.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                textAusgeben("Test3");
+        dialogue3Button.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                buttonPressed = 3;
             }
         });
 
-        dialogue4Button.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                textAusgeben("Test4");
+        dialogue4Button.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                buttonPressed = 4;
+            }
+        });
+
+        textPane1.addKeyListener(new KeyAdapter()
+        {
+            @Override
+            public void keyPressed(KeyEvent e)
+            {
+                if (e.getKeyCode() == 10)
+                {
+                    nameEntered = true;
+                }
             }
         });
     }
 
+    public void enterText(char s, Color c)
+    {
+        StyledDocument doc = textPane1.getStyledDocument();
 
-    //Gibt den gegebenen Text nacheinander(wie in Pokemon aus)
+        Style style = textPane1.addStyle("Color", null);
+        StyleConstants.setForeground(style, c);
 
-    public void textAusgeben(String text) {
-        String tmpText = textPane1.getText();
-        textPane1.setText(tmpText);
+        String test = textPane1.getText() + s;
+        textPane1.setText(test);
+    }
 
-
-        /*char c = text.toCharArray()[0];
-        ActionListener taskPerformer = new ActionListener()
+    public void buttonText(String s1, String s2, String s3, String s4)
+    {
+        dialogue1Button.setText(s1);
+        dialogue1Button.setEnabled(true);
+        dialogue2Button.setText(s2);
+        dialogue2Button.setEnabled(true);
+        if (s3 == null)
         {
-            public void actionPerformed(ActionEvent evt)
-            {
-                //TODO Text nacheinander in EditorPane ausgeben
-                String tmpText = editorPane1.getText() + c;
+            dialogue3Button.setEnabled(false);
+        } else
+        {
+            dialogue3Button.setEnabled(true);
+            dialogue3Button.setText(s3);
+        }
+        if (s4 == null)
+        {
+            dialogue4Button.setEnabled(false);
+        } else
+        {
+            dialogue4Button.setEnabled(true);
+            dialogue4Button.setText(s4);
+        }
+    }
 
-                editorPane1.setText(tmpText);
-            }
-        };
-        new Timer(200, taskPerformer).start();*/
+    public void setEditable(boolean b)
+    {
+        textPane1.transferFocus();
+        textPane1.setEditable(b);
+        textPane1.setToolTipText("Enter your name");
+        if (nameEntered == true)
+        {
+            textPane1.setToolTipText("Dialogue");
+        }
+    }
 
+    public String getName()
+    {
+        if (nameEntered == true)
+        {
+            String[] lines = textPane1.getText().split("\\n");
+
+            return lines[4];
+
+        } else
+        {
+            return null;
+        }
+    }
+
+    public void resetButton()
+    {
+        buttonPressed = 0;
+    }
+
+    public int getButtonPressed()
+    {
+        return buttonPressed;
     }
 
     {
@@ -92,7 +177,8 @@ public class GUI extends JFrame {
      *
      * @noinspection ALL
      */
-    private void $$$setupUI$$$() {
+    private void $$$setupUI$$$()
+    {
         panel = new JPanel();
         panel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(5, 1, new Insets(10, 10, 10, 10), -1, -1));
         panel.setFont(new Font("Comic Sans MS", Font.BOLD, panel.getFont().getSize()));
@@ -124,16 +210,8 @@ public class GUI extends JFrame {
     /**
      * @noinspection ALL
      */
-    public JComponent $$$getRootComponent$$$() {
+    public JComponent $$$getRootComponent$$$()
+    {
         return panel;
     }
-
-    /**
-     * Method generated by IntelliJ IDEA GUI Designer
-     * >>> IMPORTANT!! <<<
-     * DO NOT edit this method OR call it in your code!
-     *
-     * @noinspection ALL
-     */
-
 }
