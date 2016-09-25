@@ -16,9 +16,9 @@ public class textAdventure
         endbildschirm[0]="Vielen Dank. Du hast dieses Text-Adventure erfolgreich abgeschlossen! Hurrah!";
         this.Text[0] = "Willkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkeln!\n";
 
-        /*erste Entscheidung*/this.Text[1] = "OK, nun stehst du vor 3 Türen. Wähle eine aus...";
-        /*zweite Entscheidung*/this.Text[2] = "Gute Wahl, denke ich. Du kannst 3 Wege erkennen."+"\n"+" a) Der Linke: Frei\n b) Der Rechte: Ein verschlossenes Tor\n c) Der Vordere: Zu dunkel um etwas zu sehen.";
-        /*Vorne*/this.Text[3] = "Es war zu dunkel und du bist in ein Loch gefallen." +"\n"+"Du bist an einem langen elenden Tod verreckt!";
+        /*erste Entscheidung*/this.Text[1] = "OK, nun stehst du vor 3 Türen. Wähle eine aus... \n";
+        /*zweite Entscheidung*/this.Text[2] = "Gute Wahl, denke ich. Du kannst 3 Wege erkennen.\nDer Linke: Frei\nDer Rechte: Ein verschlossenes Tor\nDer Vordere: Zu dunkel um etwas zu sehen.";
+        /*Vorne*/this.Text[3] = "Im dunklen hast du nichts gesehen und  bist in ein Loch gefallen." +"\n"+"Du bist an einem langen elenden Tod verreckt!";
         /*Rechts*/this.Text[4] = "Die Tür ist zu.";
         /*Links*/this.Text[5] = "Du folgst dem dir sichtbaren Weg und findest eine Truhe... "+"\n"+"Die Truhe ist OFFEN.";
         /*Schlüssel*/this.Text[6] = "Du hast einen Schlüssel gefunden."+"\n"+"Vielleicht passt er ja zu der Tür.";

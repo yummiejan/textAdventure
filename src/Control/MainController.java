@@ -89,6 +89,21 @@ public class MainController
                 break;
         }
         viewcontrol.resetButton();
+        viewcontrol.buttonText(text.getAktion(3),text.getAktion(4),text.getAktion(5),null);
+        switch(viewcontrol.getButtonPressed())
+        {
+            case 1:
+                viewcontrol.textAusgebenG(text.getText(3), Color.RED);
+                System.out.println("");
+                break;
+            case 2:
+                viewcontrol.textAusgebenG(text.getText(4), Color.RED);
+                break;
+            case 3:
+                viewcontrol.textAusgebenG(text.getText(5), Color.RED);
+                break;
+        }
+        viewcontrol.resetButton();
 
     }
 
