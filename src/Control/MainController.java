@@ -228,11 +228,11 @@ public class MainController
         //Solange beide Leben haben wird gekämpft
         while(a.getHp()>0&&b.getHp()>0)
         {
-            //Schaden auf das Leben des Gegners wird aus den Angriffspunkten minus den Verteidigungspunkten  errechnet
+            //Schaden auf das Leben des Gegners wird aus den Angriffspunkten minus den Verteidigungspunkten errechnet
             b.setHp(b.getHp()-(a.getAttackPoints()-b.getDefensePoints()));
             a.setHp(b.getHp()-(b.getAttackPoints()-a.getDefensePoints()));
         }
-        //Wenn a über 0 Leben hat gewinnt a wenn nicht dann b
+        //Wenn a über 0 Leben hat gewinnt a wenn nicht dann b und es wird ausgegeben
         if (a.getHp()>0)
         {
             return a.getName()+" besiegt "+b.getName()+" mit "+a.getHp()+" Lebenspunkten";
