@@ -26,7 +26,7 @@ public class textAdventure
         /*totenstille*/this.Text[8] = "Du bist in eine Sackgasse gelaufen und drehst wieder um."+"\n"+"Du gehst nun den Weg wo das Winseln herkommt. Ein Troll steht vor dir. Angekettet. Hinter ihm eine Truhe. Er schnaubt.";
         /*winseln*/this.Text[9] = "Der Troll versperrt dir den Weg. Du kommst nicht an die Kiste herran.\nDu musst ihn besiegen. Der Schlüssel verleit dir 2 attackPoints.";
         /*attack*/this.Text[10] = "Du kämpfst, aber weißt nicht wofür. Es ist nur eine Kiste.";
-        /*Angriff*/this.Text[11] = "Du machst 5 Schaden am Troll.\n Es scheint als würde er nur noch ein paar Schläge aushalten!\n Er hat noch 15 HP!";
+        /*Angriff*/this.Text[11] = "Du machst 5 Schaden am Troll.\nEs scheint als würde er nur noch ein paar Schläge aushalten!\nEr hat noch 15 HP!";
         /*3xAngriff*/this.Text[12] = "Wow was für eine Kombo! Du zerschnetzelst ihn wie mit einem Messer durch Butter!";
         /*Truhe*/this.Text[13] = "Du schiebst den Troll zur Seite und gehst zur Truhe!\n Dein Schlüssel vibriert. Er passt!";
         /*Treasure*/this.Text[14] = "Du erhältst einen Schlüssel und einen Totenkopf";
@@ -34,7 +34,7 @@ public class textAdventure
         /*Etwas unerwartetes*/this.Text[16] = "Du gelangst auf eine Lichtung. Na ja,ist nur eine erleuchtete Fläche.\nAber in der Mitte steht eine große Truhe. Sie scheint offen zu sein!";
         /*Die große kleine truhe*/this.Text[17] = "Du erblickst die eine kleine Truhe zu der dein Schlüssel passt! Du öffnest sie!";
         /*weiter gehen*/this.Text[18] = "Du traust dem Braten nicht und suchst einen Weg, der dich weiter führt!\n Nach einer halben Stunde stellst du fest, dass du im Kreis gelaufen bist und dich nun der Truhe widmest!";
-        /*Inhalt*/this.Text[19] = "In der kleinen Truhe ist ein Stück Pergament. Auf dem steht geschrieben: Dämlich oder Weise, das ist hier die Frage! \nDas Ziel ist erreicht, nur welches!?\n a) Real\n b) fiktiv?";
+        /*Inhalt*/this.Text[19] = "In der kleinen Truhe ist ein Stück Pergament. Auf dem steht geschrieben: Dämlich oder Weise, das ist hier die Frage! \nDas Ziel ist erreicht, nur welches!?\n a) Real ?\n b) Fiktiv ?";
         /*Real*/this.Text[20] = "Der Terror bleibt dir bestehen! Für immer in dieser Welt! R.I.P.";
         /*Fiktiv*/this.Text[21] = "Nur ein Traum hat dich geleitet! Du erwachst!";
 

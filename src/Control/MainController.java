@@ -72,7 +72,6 @@ public class MainController
             fyngui.textHinzufügenMitAuswahl(text.getText(8));
         }
         fyngui.textHinzufügenMitAuswahl(text.getText(10));
-        //Thread.sleep(2000);
         fyngui.textHinzufügenMitAuswahl(text.getText(11));
         troll.setName("Troll");
         fyngui.textHinzufügenMitAuswahl(kaempfen(player,troll));
