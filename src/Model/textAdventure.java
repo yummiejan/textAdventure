@@ -8,7 +8,7 @@ public class textAdventure
     private String[] Text=new String[22];
     private String[] Aktion=new String[15];
     private String[] anfangsdialog = new String[3];
-    private String[] endbildschirm = new String[1];
+    private String[] endbildschirm = new String[2];
 
     public textAdventure() {
 
@@ -18,29 +18,30 @@ public class textAdventure
         anfangsdialog[2]="Worin möchtest du einen Punkt investieren?\n a) Health\n b) Attack\n c) Defense";
 
         endbildschirm[0]="Vielen Dank. Du hast dieses Text-Adventure erfolgreich abgeschlossen! Hurrah!";
+        endbildschirm[1]="Vielen Dank fürs Spielen. Du bist leider gestorben. Versuch es doch noch einmal!";
         this.Text[0] = "Willkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkeln!\n";
 
         /*erste Entscheidung*/this.Text[1] = "OK, nun stehst du vor 3 Türen. Wähle eine aus... \n";
-        /*zweite Entscheidung*/this.Text[2] = "Gute Wahl, denke ich. Du kannst 3 Wege erkennen.\n a) Der Linke: Frei\n b) Der Rechte: Ein verschlossenes Tor\n c) Der Vordere: Zu dunkel um etwas zu sehen.";
-        /*Vorne*/this.Text[3] = "Im dunklen hast du nichts gesehen und  bist in ein Loch gefallen." +"\n"+"Du bist an einem langen elenden Tod verreckt!";
-        /*Rechts*/this.Text[4] = "Die Tür ist zu.";
-        /*Links*/this.Text[5] = "Du folgst dem dir sichtbaren Weg und findest eine Truhe... "+"\n"+"Die Truhe ist OFFEN.";
-        /*Schlüssel*/this.Text[6] = "Du hast einen Schlüssel gefunden."+"\n"+"Vielleicht passt er ja zu der Tür.";
-        /*dritte Entscheidung*/this.Text[7] = "Du versuchst die Tür zu öffnen. Der Schlüssel passt nicht!"+"\n"+"Du gehst wieder zur Truhe, wo du den Schlüssel gefunden hast!"+"\n"+"Zwei Wege füren dich weiter:\n a) von rechts hörst du ein winseln\n b) Von links Totenstille.";
-        /*totenstille*/this.Text[8] = "Du bist in eine Sackgasse gelaufen und drehst wieder um."+"\n"+"Du gehst nun den Weg wo das Winseln herkommt. Ein Troll steht vor dir. Angekettet. Hinter ihm eine Truhe. Er schnaubt.";
-        /*winseln*/this.Text[9] = "Der Troll versperrt dir den Weg. Du kommst nicht an die Kiste herran.\nDu musst ihn besiegen. Der Schlüssel verleit dir 2 attackPoints.";
-        /*attack*/this.Text[10] = "Du kämpfst, aber weißt nicht wofür. Es ist nur eine Kiste.";
-        /*Angriff*/this.Text[11] = "Du machst 5 Schaden am Troll.\nEs scheint als würde er nur noch ein paar Schläge aushalten!\nEr hat noch 15 HP!";
-        /*3xAngriff*/this.Text[12] = "Wow was für eine Kombo! Du zerschnetzelst ihn wie mit einem Messer durch Butter!";
-        /*Truhe*/this.Text[13] = "Du schiebst den Troll zur Seite und gehst zur Truhe!\n Dein Schlüssel vibriert. Er passt!";
-        /*Treasure*/this.Text[14] = "Du erhältst einen Schlüssel und einen Totenkopf";
+        /*zweite Entscheidung*/this.Text[2] = "Gute Wahl, denke ich. Du kannst 3 Wege erkennen.\n a) Der Linke: Frei\n b) Der Rechte: Ein verschlossenes Tor\n c) Der Vordere: Zu dunkel um etwas zu sehen. \n";
+        /*Dunkel*/this.Text[3] = "Im Dunklen hast du nichts gesehen und  bist in ein Loch gefallen.\nDu bist an einem langen elenden Tod verreckt! \n";
+        /*Tür*/this.Text[4] = "Die Tür ist zu. \n";
+        /*Sichtbar*/this.Text[5] = "Du folgst dem dir sichtbaren Weg und findest eine Truhe... "+"\n"+"Die Truhe ist OFFEN.\n";
+        /*Schlüssel*/this.Text[6] = "Du hast einen Schlüssel gefunden. Vielleicht passt er ja zu der Tür.\n";
+        /*dritte Entscheidung*/this.Text[7] = "Du versuchst die Tür zu öffnen. Der Schlüssel passt nicht!"+"\n"+"Du gehst wieder zur Truhe, wo du den Schlüssel gefunden hast!"+"\n"+"Zwei Wege füren dich weiter:\n a) von rechts hörst du ein winseln\n b) Von links Totenstille.\n";
+        /*totenstille*/this.Text[8] = "Du bist in eine Sackgasse gelaufen und drehst wieder um."+"\n"+"Du gehst nun den Weg wo das Winseln herkommt.\nEin Troll steht vor dir. Angekettet. Hinter ihm eine Truhe. Er schnaubt.\n";
+        /*winseln*/this.Text[9] = "Der Troll versperrt dir den Weg. Du kommst nicht an die Kiste herran.\nDu musst ihn besiegen. Der Schlüssel verleit dir 2 attackPoints.\n";
+        /*attack*/this.Text[10] = "Du kämpfst, aber weißt nicht wofür. Es ist nur eine Kiste.\n";
+        /*Angriff*/this.Text[11] = "Du machst 5 Schaden am Troll.\nEs scheint als würde er nur noch ein paar Schläge aushalten!\nEr hat noch 15 HP! \n";
+        /*3xAngriff*/this.Text[12] = "Wow was für eine Kombo! Du zerschnetzelst ihn wie mit einem Messer durch Butter! \n";
+        /*Truhe*/this.Text[13] = "Du schiebst den Troll zur Seite und gehst zur Truhe!\nDein Schlüssel vibriert. Er passt!\n";
+        /*Treasure*/this.Text[14] = "Du erhältst einen Schlüssel und einen Totenkopf.\n";
         /*DIE TÜR*/this.Text[15] = "Du gehst zurück zur Tür!\nDer Schlüssel passt jedoch nicht in dir Tür der Totenkopf jedoch schon! Wie komisch!\n";
-        /*Etwas unerwartetes*/this.Text[16] = "Du gelangst auf eine Lichtung. Na ja,ist nur eine erleuchtete Fläche.\nAber in der Mitte steht eine große Truhe. Sie scheint offen zu sein!";
-        /*Die große kleine truhe*/this.Text[17] = "Du erblickst die eine kleine Truhe zu der dein Schlüssel passt! Du öffnest sie!";
-        /*weiter gehen*/this.Text[18] = "Du traust dem Braten nicht und suchst einen Weg, der dich weiter führt!\n Nach einer halben Stunde stellst du fest, dass du im Kreis gelaufen bist und dich nun der Truhe widmest!";
-        /*Inhalt*/this.Text[19] = "In der kleinen Truhe ist ein Stück Pergament. Auf dem steht geschrieben: Dämlich oder Weise, das ist hier die Frage! \nDas Ziel ist erreicht, nur welches!?\n a) Real ?\n b) Fiktiv ?";
-        /*Real*/this.Text[20] = "Der Terror bleibt dir bestehen! Für immer in dieser Welt! R.I.P.";
-        /*Fiktiv*/this.Text[21] = "Nur ein Traum hat dich geleitet! Du erwachst!";
+        /*Etwas unerwartetes*/this.Text[16] = "Du gelangst auf eine Lichtung. Na ja,ist nur eine erleuchtete Fläche.\nAber in der Mitte steht eine große Truhe. Sie scheint nicht verschlossen zu sein!\n";
+        /*Die große kleine truhe*/this.Text[17] = "Du erblickst in der Kiste eine kleine Box mit einem Schloss zu der dein Schlüssel passt! Du öffnest sie!\n";
+        /*weiter gehen*/this.Text[18] = "Du traust dem Braten nicht und suchst einen Weg, der dich weiter führt!\nNach einer halben Stunde stellst du fest, dass du im Kreis gelaufen bist und dich nun der Truhe widmest!\n";
+        /*Inhalt*/this.Text[19] = "In der kleinen Truhe ist ein Stück Pergament.\nAuf dem steht geschrieben: Dämlich oder Weise, das ist hier die Frage! \nDas Ziel ist erreicht, nur welches!?\n a) Real?\n b) Fiktiv?\n";
+        /*Real*/this.Text[20] = "Der Terror bleibt dir bestehen! Für immer in dieser Welt! R.I.P.\n";
+        /*Fiktiv*/this.Text[21] = "Nur ein Traum hat dich geleitet! Du erwachst!\n";
 
 
         /*Auswahl erste Entscheidung*/this.Aktion[0]= "Rechts";

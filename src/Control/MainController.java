@@ -140,11 +140,14 @@ public class MainController
         }
         viewcontrol.resetButton();
         viewcontrol.buttonText(text.getAktion(3),text.getAktion(4),text.getAktion(5),null);
+        while(viewcontrol.getButtonPressed() == 0)
+        {
+            System.out.print("");
+        }
         switch(viewcontrol.getButtonPressed())
         {
             case 1:
                 viewcontrol.textAusgebenG(text.getText(3), Color.RED);
-                System.out.println("");
                 break;
             case 2:
                 viewcontrol.textAusgebenG(text.getText(4), Color.RED);
@@ -153,73 +156,107 @@ public class MainController
                 viewcontrol.textAusgebenG(text.getText(5), Color.RED);
                 break;
         }
-        viewcontrol.resetButton();
-        viewcontrol.textAusgebenG(text.getText(6), Color.RED);
-        viewcontrol.textAusgebenG(text.getText(7), Color.RED);
-        viewcontrol.buttonText(text.getAktion(7), text.getAktion(8), null, null);
-        switch(viewcontrol.getButtonPressed())
+        if(viewcontrol.getButtonPressed() == 1)
         {
-            case 1:
-                viewcontrol.textAusgebenG(text.getText(8), Color.RED);
-                break;
-            case 2:
-                viewcontrol.textAusgebenG(text.getText(9), Color.RED);
-                break;
-        }
-        viewcontrol.resetButton();
-        viewcontrol.buttonText(text.getAktion(9), null, null, null);
-        switch(viewcontrol.getButtonPressed())
+            viewcontrol.textAusgebenG(text.getEnd(1),Color.RED);
+            viewcontrol.buttonText(null, null, null, null);
+            viewcontrol.changeButtonState(false);
+        } else
         {
-            case 1:
-                viewcontrol.textAusgebenG(text.getText(10), Color.RED);
-                break;
+            viewcontrol.resetButton();
+            viewcontrol.textAusgebenG(text.getText(6), Color.RED);
+            viewcontrol.textAusgebenG(text.getText(7), Color.RED);
+            viewcontrol.buttonText(text.getAktion(7), text.getAktion(8), null, null);
+            while(viewcontrol.getButtonPressed() == 0)
+            {
+                System.out.print("");
+            }
+            switch(viewcontrol.getButtonPressed())
+            {
+                case 1:
+                    viewcontrol.textAusgebenG(text.getText(8), Color.RED);
+                    break;
+                case 2:
+                    viewcontrol.textAusgebenG(text.getText(9), Color.RED);
+                    break;
+            }
+            viewcontrol.resetButton();
+            viewcontrol.buttonText(text.getAktion(9), null, null, null);
+            while(viewcontrol.getButtonPressed() == 0)
+            {
+                System.out.print("");
+            }
+            switch(viewcontrol.getButtonPressed())
+            {
+                case 1:
+                    viewcontrol.textAusgebenG(text.getText(10), Color.RED);
+                    break;
+            }
+            viewcontrol.resetButton();
+            viewcontrol.textAusgebenG(text.getText(11), Color.RED);
+            viewcontrol.buttonText(text.getAktion(10), null, null, null);
+            while(viewcontrol.getButtonPressed() == 0)
+            {
+                System.out.print("");
+            }
+            switch(viewcontrol.getButtonPressed())
+            {
+                case 1:
+                    viewcontrol.textAusgebenG(text.getText(12), Color.RED);
+                    break;
+            }
+            viewcontrol.resetButton();
+            viewcontrol.textAusgebenG(text.getText(13), Color.RED);
+            viewcontrol.buttonText(text.getAktion(11), null, null, null);
+            while(viewcontrol.getButtonPressed() == 0)
+            {
+                System.out.print("");
+            }
+            switch (viewcontrol.getButtonPressed())
+            {
+                case 1:
+                    viewcontrol.textAusgebenG(text.getText(14), Color.RED);
+                    break;
+            }
+            viewcontrol.resetButton();
+            viewcontrol.textAusgebenG(text.getText(15), Color.RED);
+            viewcontrol.textAusgebenG(text.getText(16), Color.RED);
+            viewcontrol.buttonText(text.getAktion(11), text.getAktion(12), null, null);
+            while(viewcontrol.getButtonPressed() == 0)
+            {
+                System.out.print("");
+            }
+            switch(viewcontrol.getButtonPressed())
+            {
+                case 1:
+                    viewcontrol.textAusgebenG(text.getText(17), Color.RED);
+                    break;
+                case 2:
+                    viewcontrol.textAusgebenG(text.getText(18), Color.RED);
+                    viewcontrol.textAusgebenG(text.getText(17), Color.RED);
+                    break;
+            }
+            viewcontrol.resetButton();
+            viewcontrol.textAusgebenG(text.getText(19), Color.RED);
+            viewcontrol.buttonText(text.getAktion(13), text.getAktion(14), null, null);
+            while(viewcontrol.getButtonPressed() == 0)
+            {
+                System.out.print("");
+            }
+            switch(viewcontrol.getButtonPressed())
+            {
+                case 1:
+                    viewcontrol.textAusgebenG(text.getText(20), Color.RED);
+                    break;
+                case 2:
+                    viewcontrol.textAusgebenG(text.getText(21), Color.RED);
+                    break;
+            }
+            viewcontrol.buttonText(null, null, null, null);
+            viewcontrol.resetButton();
+            viewcontrol.textAusgebenG(text.getEnd(0), Color.RED);
         }
-        viewcontrol.resetButton();
-        viewcontrol.textAusgebenG(text.getText(11), Color.RED);
-        viewcontrol.buttonText(text.getAktion(10), null, null, null);
-        switch(viewcontrol.getButtonPressed())
-        {
-            case 1:
-                viewcontrol.textAusgebenG(text.getText(12), Color.RED);
-                break;
-        }
-        viewcontrol.resetButton();
-        viewcontrol.textAusgebenG(text.getText(13), Color.RED);
-        viewcontrol.buttonText(text.getAktion(11), null, null, null);
-        switch (viewcontrol.getButtonPressed())
-        {
-            case 1:
-                viewcontrol.textAusgebenG(text.getText(14), Color.RED);
-                break;
-        }
-        viewcontrol.resetButton();
-        viewcontrol.textAusgebenG(text.getText(15), Color.RED);
-        viewcontrol.textAusgebenG(text.getText(16), Color.RED);
-        viewcontrol.buttonText(text.getAktion(11), text.getAktion(12), null, null);
-        switch(viewcontrol.getButtonPressed())
-        {
-            case 1:
-                viewcontrol.textAusgebenG(text.getText(17), Color.RED);
-                break;
-            case 2:
-                viewcontrol.textAusgebenG(text.getText(18), Color.RED);
-                viewcontrol.textAusgebenG(text.getText(17), Color.RED);
-                break;
-        }
-        viewcontrol.resetButton();
-        viewcontrol.textAusgebenG(text.getText(19), Color.RED);
-        viewcontrol.buttonText(text.getAktion(13), text.getAktion(14), null, null);
-        switch(viewcontrol.getButtonPressed())
-        {
-            case 1:
-                viewcontrol.textAusgebenG(text.getText(20), Color.RED);
-                break;
-            case 2:
-                viewcontrol.textAusgebenG(text.getText(21), Color.RED);
-                break;
-        }
-        viewcontrol.resetButton();
-        viewcontrol.textAusgebenG(text.getEnd(0), Color.RED);
+
     }
 
     //Methode fürs Kämpfen vergleicht Werte

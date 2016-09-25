@@ -59,4 +59,9 @@ public class ViewController
     {
         return gui.getName();
     }
+
+    public void changeButtonState(boolean b)
+    {
+        gui.changeButtonState(b);
+    }
 }
