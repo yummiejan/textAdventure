@@ -225,7 +225,7 @@ public class MainController
     //Methode fürs Kämpfen vergleicht Werte
     public String kaempfen(Creature a,Creature b)
     {
-        //Solange beide Leben haben wird gekämmpft
+        //Solange beide Leben haben wird gekämpft
         while(a.getHp()>0&&b.getHp()>0)
         {
             //Schaden auf das Leben des Gegners wird aus den Angriffspunkten minus den Verteidigungspunkten errechnet
