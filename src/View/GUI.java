@@ -9,8 +9,7 @@ import java.awt.event.ActionListener;
 /**
  * Created by janpa on 12.09.2016.
  */
-public class GUI extends JFrame
-{
+public class GUI extends JFrame {
     private JPanel panel;
     private JEditorPane editorPane1;
     private JButton dialogue1;
@@ -23,8 +22,7 @@ public class GUI extends JFrame
     private Timer timer;
 
 
-    public GUI()
-    {
+    public GUI() {
         setContentPane(panel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -32,34 +30,26 @@ public class GUI extends JFrame
         this.setResizable(false);
         this.setTitle("Text Adventure");
 
-        dialogue1Button.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
+        dialogue1Button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
                 textAusgeben("Test1");
             }
         });
 
-        dialogue2Button.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
+        dialogue2Button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
                 textAusgeben("Test2");
             }
         });
 
-        dialogue3Button.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
+        dialogue3Button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
                 textAusgeben("Test3");
             }
         });
 
-        dialogue4Button.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent e)
-            {
+        dialogue4Button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
                 textAusgeben("Test4");
             }
         });
@@ -68,8 +58,7 @@ public class GUI extends JFrame
 
     //Gibt den gegebenen Text nacheinander(wie in Pokemon aus)
 
-    public void textAusgeben(String text)
-    {
+    public void textAusgeben(String text) {
         String tmpText = textPane1.getText();
         textPane1.setText(tmpText);
 
@@ -103,8 +92,7 @@ public class GUI extends JFrame
      *
      * @noinspection ALL
      */
-    private void $$$setupUI$$$()
-    {
+    private void $$$setupUI$$$() {
         panel = new JPanel();
         panel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(5, 1, new Insets(10, 10, 10, 10), -1, -1));
         panel.setFont(new Font("Comic Sans MS", Font.BOLD, panel.getFont().getSize()));
@@ -128,14 +116,15 @@ public class GUI extends JFrame
         dialogue4Button.setText(" ");
         panel.add(dialogue4Button, new com.intellij.uiDesigner.core.GridConstraints(4, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         textPane1 = new JTextPane();
+        textPane1.setEditable(true);
+        textPane1.setToolTipText("");
         panel.add(textPane1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
     }
 
     /**
      * @noinspection ALL
      */
-    public JComponent $$$getRootComponent$$$()
-    {
+    public JComponent $$$getRootComponent$$$() {
         return panel;
     }
 

@@ -111,9 +111,4 @@ public class MainController
 
     }
 
-    public void guiStory(){
-        jangui.textAusgeben(text.getText(0));
-        jangui.textAusgeben(text.getText(1));
-    }
-
 }
