@@ -16,7 +16,7 @@ public class MainController
 {
     Console fyngui = new Console();
     Model.textAdventure text = new Model.textAdventure();
-    Player player = new Player("name",1000,100,5);
+    Player player = new Player("name",100,0,0,5);
     Monster troll = new Monster("Troll",100,5,3);
     AuswahlGUI aus = new AuswahlGUI();
     ViewController viewcontrol;
@@ -43,11 +43,22 @@ public class MainController
     {
         fyngui.textHinzufügenMitAuswahl(text.getAnfangsdialog(0));
         player.setName(fyngui.getInput());
-        player.setHp(10);
         fyngui.textHinzufügenMitAuswahl("Hallo "+player.getName());
+        while (player.getPunkte()>0)
+        {
+            fyngui.textHinzufügenMitAuswahl("Du hast noch "+player.getPunkte()+" "+text.getAnfangsdialog(2));
+            if (fyngui.getInput().equals("a"))
+            {
+                player.setHp(player.getHp()+10);
+            }else if (fyngui.getInput().equals("b")){
+                player.setAttackPoints(player.getAttackPoints()+5);
+            }else if (fyngui.getInput().equals("c")){
+                player.setDefensePoints(player.getDefensePoints()+5);
+            }
+            player.setPunkte(player.getPunkte()-1);
+        }
     }
     public void consoleStory() {
-        fyngui.textHinzufügenMitAuswahl(text.getText(0));
         fyngui.textHinzufügenMitAuswahl(text.getText(1), "Holz Tür", "Stahl Tür", "Stein Tür");
         fyngui.getInput();
         fyngui.textHinzufügenMitAuswahl(text.getText(2));
