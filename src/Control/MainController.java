@@ -108,7 +108,72 @@ public class MainController
                 break;
         }
         viewcontrol.resetButton();
-
+        viewcontrol.textAusgebenG(text.getText(6), Color.RED);
+        viewcontrol.textAusgebenG(text.getText(7), Color.RED);
+        viewcontrol.buttonText(text.getAktion(7), text.getAktion(8), null, null);
+        switch(viewcontrol.getButtonPressed())
+        {
+            case 1:
+                viewcontrol.textAusgebenG(text.getText(8), Color.RED);
+                break;
+            case 2:
+                viewcontrol.textAusgebenG(text.getText(9), Color.RED);
+                break;
+        }
+        viewcontrol.resetButton();
+        viewcontrol.buttonText(text.getAktion(9), null, null, null);
+        switch(viewcontrol.getButtonPressed())
+        {
+            case 1:
+                viewcontrol.textAusgebenG(text.getText(10), Color.RED);
+                break;
+        }
+        viewcontrol.resetButton();
+        viewcontrol.textAusgebenG(text.getText(11), Color.RED);
+        viewcontrol.buttonText(text.getAktion(10), null, null, null);
+        switch(viewcontrol.getButtonPressed())
+        {
+            case 1:
+                viewcontrol.textAusgebenG(text.getText(12), Color.RED);
+                break;
+        }
+        viewcontrol.resetButton();
+        viewcontrol.textAusgebenG(text.getText(13), Color.RED);
+        viewcontrol.buttonText(text.getAktion(11), null, null, null);
+        switch (viewcontrol.getButtonPressed())
+        {
+            case 1:
+                viewcontrol.textAusgebenG(text.getText(14), Color.RED);
+                break;
+        }
+        viewcontrol.resetButton();
+        viewcontrol.textAusgebenG(text.getText(15), Color.RED);
+        viewcontrol.textAusgebenG(text.getText(16), Color.RED);
+        viewcontrol.buttonText(text.getAktion(11), text.getAktion(12), null, null);
+        switch(viewcontrol.getButtonPressed())
+        {
+            case 1:
+                viewcontrol.textAusgebenG(text.getText(17), Color.RED);
+                break;
+            case 2:
+                viewcontrol.textAusgebenG(text.getText(18), Color.RED);
+                viewcontrol.textAusgebenG(text.getText(17), Color.RED);
+                break;
+        }
+        viewcontrol.resetButton();
+        viewcontrol.textAusgebenG(text.getText(19), Color.RED);
+        viewcontrol.buttonText(text.getAktion(13), text.getAktion(14), null, null);
+        switch(viewcontrol.getButtonPressed())
+        {
+            case 1:
+                viewcontrol.textAusgebenG(text.getText(20), Color.RED);
+                break;
+            case 2:
+                viewcontrol.textAusgebenG(text.getText(21), Color.RED);
+                break;
+        }
+        viewcontrol.resetButton();
+        viewcontrol.textAusgebenG(text.getEnd(0), Color.RED);
     }
 
 }
