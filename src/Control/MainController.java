@@ -6,6 +6,7 @@ import Model.Monster;
 import Model.Player;
 import View.*;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
