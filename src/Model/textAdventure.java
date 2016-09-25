@@ -13,7 +13,7 @@ public class textAdventure
     public textAdventure() {
 
         //Text für den Anfangsdialog
-        anfangsdialog[0]="Hallo wir erklären dir nun kurz das Prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meist A/B/C/D als Antwort eingeben oder dich im Fenster durchklicken!\nAber jetzt sag uns doch erstmal wie du heißt?\nGib deinen Namen ein und drücke Enter!";
+        anfangsdialog[0]="Hallo! Wir erklären dir nun kurz das Prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meist A/B/C/D als Antwort eingeben oder dich im Fenster durchklicken!\nAber jetzt sag uns doch erstmal wie du heißt?\nGib deinen Namen ein und drücke Enter!";
         anfangsdialog[1]="Du kannst in 3 Kategorien Punkte verteilen, am Anfang kannst du insgesamt 15 Punkte verteilen. Wähle Weise!";
         anfangsdialog[2]="Worin möchtest du einen Punkt investieren?\n a) Health\n b) Attack\n c) Defense";
 
