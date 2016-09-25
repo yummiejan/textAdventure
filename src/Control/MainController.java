@@ -31,7 +31,7 @@ public class MainController
         else if(aus.getAuswahl() == 1)
         {
             anfangsDialogKonsole();
-            test();
+            consoleStory();
         }
     }
 
@@ -41,21 +41,25 @@ public class MainController
         player.setName(fyngui.getInput());
         fyngui.textHinzufügenMitAuswahl("Hallo "+player.getName());
     }
-    public void test() {
+    public void consoleStory() {
         fyngui.textHinzufügenMitAuswahl(text.getText(0));
         fyngui.textHinzufügenMitAuswahl(text.getText(1), "Holz Tür", "Stahl Tür", "Stein Tür");
         fyngui.getInput();
         fyngui.textHinzufügenMitAuswahl(text.getText(2));
         if (fyngui.getInput().equals("a")) {
             fyngui.textHinzufügenMitAuswahl(text.getText(5));
-        } else if (fyngui.getInput().equals("b")) {
+        } else if (fyngui.getInput().equals("b")) { //TODO Fehler das man 2 mal b drücken muss
             fyngui.textHinzufügenMitAuswahl(text.getText(4), "den sichtbaren", "den dunklen");
             if (fyngui.getInput().equals("a")) {
                 fyngui.textHinzufügenMitAuswahl(text.getText(5));
+            }else if (fyngui.getInput().equals("b")) {
+                fyngui.textHinzufügenMitAuswahl(text.getText(3));
             }
         } else if (fyngui.getInput().equals("c")) {
             fyngui.textHinzufügenMitAuswahl(text.getText(3));
         }
+        fyngui.textHinzufügenMitAuswahl(text.getText(6));
+        fyngui.textHinzufügenMitAuswahl(text.getText(7));
 
     }
     public void guiStory()

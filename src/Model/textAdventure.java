@@ -17,12 +17,12 @@ public class textAdventure
         this.Text[0] = "Willkommen in ... ach weiß ich doch auch nicht!"+ "\n"+"Jedenfalls willst du hier nicht lange bleiben und suchst einen Ausweg aus dem Dunkeln!\n";
 
         /*erste Entscheidung*/this.Text[1] = "OK, nun stehst du vor 3 Türen. Wähle eine aus... \n";
-        /*zweite Entscheidung*/this.Text[2] = "Gute Wahl, denke ich. Du kannst 3 Wege erkennen.\nDer Linke: Frei\nDer Rechte: Ein verschlossenes Tor\nDer Vordere: Zu dunkel um etwas zu sehen.";
+        /*zweite Entscheidung*/this.Text[2] = "Gute Wahl, denke ich. Du kannst 3 Wege erkennen.\n a) Der Linke: Frei\n b) Der Rechte: Ein verschlossenes Tor\n c) Der Vordere: Zu dunkel um etwas zu sehen.";
         /*Vorne*/this.Text[3] = "Im dunklen hast du nichts gesehen und  bist in ein Loch gefallen." +"\n"+"Du bist an einem langen elenden Tod verreckt!";
         /*Rechts*/this.Text[4] = "Die Tür ist zu.";
         /*Links*/this.Text[5] = "Du folgst dem dir sichtbaren Weg und findest eine Truhe... "+"\n"+"Die Truhe ist OFFEN.";
         /*Schlüssel*/this.Text[6] = "Du hast einen Schlüssel gefunden."+"\n"+"Vielleicht passt er ja zu der Tür.";
-        /*dritte Entscheidung*/this.Text[7] = "Du versuchst die Tür zu öffnen. Der Schlüssel passt nicht!"+"\n"+"Du gehst wieder zur Truhe, wo du den Schlüssel gefunden hast!"+"\n"+"Zwei Wege füren dich weiter, von rechts hörst du ein winseln. Von links Totenstille.";
+        /*dritte Entscheidung*/this.Text[7] = "Du versuchst die Tür zu öffnen. Der Schlüssel passt nicht!"+"\n"+"Du gehst wieder zur Truhe, wo du den Schlüssel gefunden hast!"+"\n"+"Zwei Wege füren dich weiter:\n a) von rechts hörst du ein winseln\n b) Von links Totenstille.";
         /*totenstille*/this.Text[8] = "Du bist in eine Sackgasse gelaufen und drehst wieder um."+"\n"+"Du gehst nun den Weg wo das Winseln herkommt. Ein Troll steht vor dir. Angekettet. Hinter ihm eine Truhe. Er schnaubt.";
         /*winseln*/this.Text[9] = "Ein Troll steht vor dir. Angeckettet. Hinter ihm eine Truhe. Er schnaubt.\nDer Troll versperrt dir den Weg. Du kommst nicht an die Kiste herran."+"\n"+"Du musst ihn besiegen. Der Schlüssel verleit dir 2 attackPoints.";
         /*attack*/this.Text[10] = "Du kämpfst, aber weißt nicht wofür. Es ist nur eine Kiste.";
