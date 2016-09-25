@@ -1,10 +1,13 @@
 package Control;
 
 
+import Model.Creature;
+import Model.Monster;
 import Model.Player;
 import View.*;
 
 import java.awt.*;
+import java.util.Random;
 
 /**
  * Created by janpa on 11.09.2016.
@@ -13,7 +16,8 @@ public class MainController
 {
     Console fyngui = new Console();
     Model.textAdventure text = new Model.textAdventure();
-    Player player = new Player("name",100,1,1);
+    Player player = new Player("name",1000,100,5);
+    Monster troll = new Monster("Troll",100,5,3);
     AuswahlGUI aus = new AuswahlGUI();
     ViewController viewcontrol;
 
@@ -39,6 +43,7 @@ public class MainController
     {
         fyngui.textHinzufügenMitAuswahl(text.getAnfangsdialog(0));
         player.setName(fyngui.getInput());
+        player.setHp(10);
         fyngui.textHinzufügenMitAuswahl("Hallo "+player.getName());
     }
     public void consoleStory() {
@@ -60,6 +65,16 @@ public class MainController
         }
         fyngui.textHinzufügenMitAuswahl(text.getText(6));
         fyngui.textHinzufügenMitAuswahl(text.getText(7));
+        if(fyngui.getInput().equals("a"))
+        {
+            fyngui.textHinzufügenMitAuswahl(text.getText(9));
+        }else{
+            fyngui.textHinzufügenMitAuswahl(text.getText(8));
+        }
+        fyngui.textHinzufügenMitAuswahl(text.getText(10));
+        fyngui.textHinzufügenMitAuswahl(text.getText(11));
+        troll.setName("Troll");
+        fyngui.textHinzufügenMitAuswahl(kaempfen(player,troll));
 
     }
     public void guiStory()
@@ -174,6 +189,22 @@ public class MainController
         }
         viewcontrol.resetButton();
         viewcontrol.textAusgebenG(text.getEnd(0), Color.RED);
+    }
+
+    public String kaempfen(Creature a,Creature b)
+    {
+        while(a.getHp()>0&&b.getHp()>0)
+        {
+            b.setHp(b.getHp()-(a.getAttackPoints()-b.getDefensePoints()));
+            b.setHp(b.getHp()-(a.getAttackPoints()-b.getDefensePoints()));
+        }
+        if (a.getHp()>0)
+        {
+            return a.getName()+" besiegt "+b.getName()+" mit "+a.getHp()+" Lebenspunkten";
+        }else{
+            return b.getName()+" besiegt "+a.getName()+" mit "+b.getHp()+" Lebenspunkten";
+        }
+
     }
 
 }
