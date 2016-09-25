@@ -14,6 +14,7 @@ public class MainProgram
 {
     public static void main(String[] args)
     {
+        //Controller wird erstellt und durch den Konstruktoraufruf startet das Programm
         MainController control = new MainController();
     }
 }

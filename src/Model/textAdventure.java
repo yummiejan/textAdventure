@@ -7,11 +7,12 @@ public class textAdventure
 {
     private String[] Text=new String[22];
     private String[] Aktion=new String[15];
-    private String[] anfangsdialog = new String[10];
+    private String[] anfangsdialog = new String[3];
     private String[] endbildschirm = new String[1];
 
     public textAdventure() {
 
+        //Text für den Anfangsdialog
         anfangsdialog[0]="Hallo wir erklären dir nun kurz das Prinzip des Spiels!\nDu kannst einfach in die Konsole klicken und dann dort meist A/B/C/D als Antwort eingeben oder dich im Fenster durchklicken!\nAber jetzt sag uns doch erstmal wie du heißt?\nGib deinen Namen ein und drücke Enter!";
         anfangsdialog[1]="Du kannst in 3 Kategorien Punkte verteilen, am Anfang kannst du insgesamt 15 Punkte verteilen. Wähle Weise!";
         anfangsdialog[2]="Worin möchtest du einen Punkt investieren?\n a) Health\n b) Attack\n c) Defense";
@@ -59,7 +60,7 @@ public class textAdventure
         /*Auswahl*/this.Aktion[14] = "Fiktiv";
 
     }
-
+    //Get Methoden für die Texte
     public String getAnfangsdialog(int i)
     {
         return anfangsdialog[i];

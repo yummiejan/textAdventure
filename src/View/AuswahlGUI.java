@@ -12,10 +12,12 @@ import View.*;
  */
 public class AuswahlGUI extends JFrame
 {
+    //GUI zum auswählen welche GUI benutz wird
     private JLabel topLabel;
     private JButton konsolenButton;
     private JButton guiButton;
     private JPanel panel;
+    //Variable um abzufragen welcher Knopf gedrückt wurde
     private int auswahl;
 
     public AuswahlGUI()
@@ -48,7 +50,7 @@ public class AuswahlGUI extends JFrame
             }
         });
     }
-
+    //Get Methode für auswahl variable
     public int getAuswahl()
     {
         return auswahl;

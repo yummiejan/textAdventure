@@ -14,6 +14,8 @@ public class Console
     public void textHinzufügenMitAuswahl(String text)
     {
         System.out.println(text+"\n");
+        //Nach jeder textausgabe 3 sek warten damit der Text nicht zu schnell angezeigt wird
+        //Nur bei text ohne auswahl weil bei der Auswahl wartet er automatisch bis eine Eingabe erfolgt
         try
         {
             Thread.sleep(3000);

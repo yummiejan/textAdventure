@@ -4,6 +4,7 @@ package Model;
  * Created by 204g01 on 19.09.2016.
  */
 public abstract class Creature {
+    //Abstrakte Oberklasse mit Variablen und get/set methoden
     private String name;
     private int hp,attackPoints,defensePoints;
 

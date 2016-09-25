@@ -23,6 +23,7 @@ public class MainController
 
     public MainController()
     {
+        //Auswahl der Gui
         while(aus.getAuswahl() == 0)
         {
             System.out.print("");
@@ -39,6 +40,7 @@ public class MainController
         }
     }
 
+    //Konsole anfangsstory
     public void anfangsDialogKonsole()
     {
         fyngui.textHinzufügenMitAuswahl(text.getAnfangsdialog(0));
@@ -58,6 +60,8 @@ public class MainController
             player.setPunkte(player.getPunkte()-1);
         }
     }
+
+    //Konsole story komplett
     public void consoleStory() {
         fyngui.textHinzufügenMitAuswahl(text.getText(1), "Holz Tür", "Stahl Tür", "Stein Tür");
         fyngui.getInput();
@@ -218,13 +222,17 @@ public class MainController
         viewcontrol.textAusgebenG(text.getEnd(0), Color.RED);
     }
 
+    //Methode fürs Kämpfen vergleicht Werte
     public String kaempfen(Creature a,Creature b)
     {
+        //Solange beide Leben haben wird gekämpft
         while(a.getHp()>0&&b.getHp()>0)
         {
+            //Schaden auf das Leben des Gegners wird aus den Angriffspunkten minus den Verteidigungspunkten  errechnet
             b.setHp(b.getHp()-(a.getAttackPoints()-b.getDefensePoints()));
-            b.setHp(b.getHp()-(a.getAttackPoints()-b.getDefensePoints()));
+            a.setHp(b.getHp()-(b.getAttackPoints()-a.getDefensePoints()));
         }
+        //Wenn a über 0 Leben hat gewinnt a wenn nicht dann b
         if (a.getHp()>0)
         {
             return a.getName()+" besiegt "+b.getName()+" mit "+a.getHp()+" Lebenspunkten";

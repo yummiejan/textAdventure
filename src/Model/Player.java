@@ -4,7 +4,8 @@ package Model;
  * Created by 204g01 on 19.09.2016.
  */
 public class Player extends Creature {
-    private boolean tod;
+    //Playerklasse
+    //Variable Punkte unterscheidet Sie von der Monsterklasse
     private int punkte;
 
     public Player(String name,int hp,int attackPoints,int defensePoints,int punkte) {
@@ -23,9 +24,4 @@ public class Player extends Creature {
         this.punkte = punkte;
     }
 
-    public boolean getTod(){return tod;}
-
-    public void setTod(boolean tod) {
-        this.tod = tod;
-    }
 }
