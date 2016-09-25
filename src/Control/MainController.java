@@ -72,9 +72,26 @@ public class MainController
             fyngui.textHinzufügenMitAuswahl(text.getText(8));
         }
         fyngui.textHinzufügenMitAuswahl(text.getText(10));
+        //Thread.sleep(2000);
         fyngui.textHinzufügenMitAuswahl(text.getText(11));
         troll.setName("Troll");
         fyngui.textHinzufügenMitAuswahl(kaempfen(player,troll));
+        fyngui.textHinzufügenMitAuswahl(text.getText(13));
+        fyngui.textHinzufügenMitAuswahl(text.getText(14));
+        fyngui.textHinzufügenMitAuswahl(text.getText(15));
+        fyngui.textHinzufügenMitAuswahl(text.getText(16));
+        fyngui.textHinzufügenMitAuswahl(text.getText(17));
+        fyngui.textHinzufügenMitAuswahl(text.getText(18));
+        fyngui.textHinzufügenMitAuswahl(text.getText(19));
+        if (fyngui.getInput().equals("a"))
+        {
+            fyngui.textHinzufügenMitAuswahl(text.getText(20));
+        }else{
+            fyngui.textHinzufügenMitAuswahl(text.getText(21));
+        }
+
+
+
 
     }
     public void guiStory()

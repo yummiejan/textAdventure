@@ -34,7 +34,7 @@ public class textAdventure
         /*Etwas unerwartetes*/this.Text[16] = "Du gelangst auf eine Lichtung. Na ja,ist nur eine erleuchtete Fläche.\nAber in der Mitte steht eine große Truhe. Sie scheint offen zu sein!";
         /*Die große kleine truhe*/this.Text[17] = "Du erblickst die eine kleine Truhe zu der dein Schlüssel passt! Du öffnest sie!";
         /*weiter gehen*/this.Text[18] = "Du traust dem Braten nicht und suchst einen Weg, der dich weiter führt!\n Nach einer halben Stunde stellst du fest, dass du im Kreis gelaufen bist und dich nun der Truhe widmest!";
-        /*Inhalt*/this.Text[19] = "In der kleinen Truhe ist ein Stück Pergament. Auf dem steht geschrieben: Dämlich oder Weise, das ist hier die Frage! \nDas Ziel ist erreicht, nur welches!?\nReal oder fiktiv?";
+        /*Inhalt*/this.Text[19] = "In der kleinen Truhe ist ein Stück Pergament. Auf dem steht geschrieben: Dämlich oder Weise, das ist hier die Frage! \nDas Ziel ist erreicht, nur welches!?\n a) Real\n b) fiktiv?";
         /*Real*/this.Text[20] = "Der Terror bleibt dir bestehen! Für immer in dieser Welt! R.I.P.";
         /*Fiktiv*/this.Text[21] = "Nur ein Traum hat dich geleitet! Du erwachst!";
 

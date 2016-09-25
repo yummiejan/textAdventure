@@ -13,7 +13,15 @@ public class Console
     //Text hinzufügen
     public void textHinzufügenMitAuswahl(String text)
     {
-        System.out.println(text);
+        System.out.println(text+"\n");
+        try
+        {
+            Thread.sleep(3000);
+        }
+        catch(InterruptedException e)
+        {
+            System.out.println(e);
+        }
     }
 
     //Text hinzufügen mit 2 Antwortmöglichkeitzen
