@@ -1,14 +1,10 @@
 package Control;
 
-
 import Model.Creature;
 import Model.Monster;
 import Model.Player;
 import View.*;
-
-import javax.swing.*;
 import java.awt.*;
-import java.util.Random;
 
 /**
  * Created by janpa on 11.09.2016.

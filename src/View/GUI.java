@@ -1,8 +1,5 @@
 package View;
 
-import Control.MainController;
-
-import javax.lang.model.element.Element;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import javax.swing.text.Style;

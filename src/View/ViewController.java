@@ -1,8 +1,5 @@
 package View;
 
-import View.*;
-import Control.MainController;
-
 import java.awt.*;
 
 /**

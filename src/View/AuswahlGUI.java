@@ -5,7 +5,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import View.*;
 
 /**
  * Created by 204g01 on 19.09.2016.

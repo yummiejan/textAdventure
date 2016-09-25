@@ -1,11 +1,6 @@
 package Main;
 
 import Control.MainController;
-import View.AuswahlGUI;
-import View.Console;
-import View.GUI;
-
-import javax.swing.*;
 
 /**
  * Created by 204g02 on 12.09.2016.
