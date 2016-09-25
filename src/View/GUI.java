@@ -66,8 +66,7 @@ public class GUI extends JFrame
     }
 
 
-    //Gibt den gegebenen Text nacheinander(wie in Pokemon aus)
-
+    //Gibt den gegebenen Text nacheinander(wie in Pokemon aus
     public void textAusgeben(String text)
     {
         String tmpText = textPane1.getText();
